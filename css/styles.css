@@ -1,0 +1,240 @@
+/* estilos gerais */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dceefb; /* Fundo da pag */
+}
+
+/* Navbar */
+#navbar {
+  padding: 1.5rem 2.5rem;
+  border-bottom: 2px solid #ddd;
+  background: white;
+}
+
+#navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #0375b4;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  padding: 2rem 2.5rem;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container dos posts */
+#posts-container {
+  display: grid; /* Usaremos grid para criar as colunas */
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas de igual tamanho */
+  gap: 4rem; /* Espaçamento entre os posts */
+  padding: 2rem 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Post individual */
+.post {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 800px;  
+  margin: 0 auto 1.5rem auto;
+}
+
+
+/* Título acima da imagem */
+.post-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Container da imagem */
+.post-image-container {
+  display: flex;
+  justify-content: center;  /* Centraliza a imagem dentro da div */
+  align-items: center;  /* Garante que a imagem seja centralizada verticalmente */
+  width: 300px;  /* Tamanho fixo para a div */
+  height: 300px;  /* Tamanho fixo para a div */
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+.post img {
+  width: 310px;  /* Define o tamanho fixo da imagem */
+  height: 310px;  /* Define o tamanho fixo da imagem */
+  object-fit: cover; /* Garante que a imagem cubra a área da div sem distorcer */
+  border-radius: 5px;
+}
+
+/* Conteúdo do post */
+.post-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+
+/* Texto descritivo */
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: left;
+}
+
+/* Rodapé do post */
+.post-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* "Por Júlia" */
+.author {
+  font-size: 0.8rem;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+/* "Ler mais" */
+.read-more {
+  font-size: 0.9rem;
+  color: #0375b4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+/* Barra lateral */
+#sidebar {
+  flex: 1;
+}
+
+#search-bar,
+#categories,
+#tags {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #0375b4;
+}
+
+#search-bar form {
+  display: flex;
+}
+
+#search-bar input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#search-bar input[type="submit"] {
+  cursor: pointer;
+  background-color: #0375b4;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 3px;
+}
+
+#tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#tags-container a {
+  background-color: #ddd;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* Rodapé */
+#footer {
+  border-top: 2px solid #ddd;
+  padding: 2rem;
+  text-align: center;
+  background: white;
+  margin-top: 2rem;
+}
+
+#footer h2,
+#footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+      flex-wrap: wrap;
+  }
+
+  .post {
+      width: 100%;
+  }
+
+  .post-content {
+      text-align: center;
+  }
+
+  .description {
+      text-align: center;
+  }
+}
