@@ -1,13 +1,15 @@
 /* estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
   padding: 0;
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #dceefb; /* Fundo da pag */
+  background: linear-gradient(180deg, #dceefb, #f0f7ff); /* Fundo da pag */
 }
 
 /* Navbar */
@@ -15,6 +17,12 @@ body {
   padding: 1.5rem 2.5rem;
   border-bottom: 2px solid #ddd;
   background: white;
+  background: linear-gradient(90deg, #0375b4, #025f9c);
+  color: white;
+}
+
+#navbar h2 {
+  color: white;
 }
 
 #navbar-inner {
@@ -30,52 +38,65 @@ body {
   gap: 1rem;
 }
 
+#nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+#nav-links a:hover {
+  color: #f0f7ff;
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: #444;
+  color: #025f9c;
   transition: 0.3s;
 }
 
 a:hover {
-  color: #0375b4;
+  color: #013f6b;
+  text-decoration: underline;
 }
 
 /* Layout principal */
 .container {
   display: flex;
+  justify-content: space-between;
   padding: 2rem 2.5rem;
-  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Container dos posts */
 #posts-container {
-  display: grid; /* Usaremos grid para criar as colunas */
-  grid-template-columns: repeat(2, 1fr); /* Duas colunas de igual tamanho */
-  gap: 4rem; /* Espaçamento entre os posts */
-  padding: 2rem 2.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex: 2;
+  max-width: 70%;
 }
 
 /* Post individual */
 .post {
   display: flex;
   flex-direction: column;
-  background: white;
-  padding: 1rem;
-  border-radius: 5px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
   margin-bottom: 1.5rem;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  max-width: 800px;  
+  max-width: 900px;  
   margin: 0 auto 1.5rem auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+  transform: translateY(-5px);
 }
 
 
@@ -90,20 +111,20 @@ a:hover {
 
 /* Container da imagem */
 .post-image-container {
-  display: flex;
-  justify-content: center;  /* Centraliza a imagem dentro da div */
-  align-items: center;  /* Garante que a imagem seja centralizada verticalmente */
-  width: 300px;  /* Tamanho fixo para a div */
-  height: 300px;  /* Tamanho fixo para a div */
-  flex-shrink: 0;
-  margin-bottom: 1rem;
+  width: 100%;  /* Tamanho fixo para a div */
+  height: auto;  /* Tamanho fixo para a div */
 }
 
 .post img {
-  width: 310px;  /* Define o tamanho fixo da imagem */
-  height: 310px;  /* Define o tamanho fixo da imagem */
+  width: 100%;  /* Define o tamanho fixo da imagem */
+  height: 200px;  /* Define o tamanho fixo da imagem */
   object-fit: cover; /* Garante que a imagem cubra a área da div sem distorcer */
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post img:hover {
+  transform: scale(1.05);
 }
 
 /* Conteúdo do post */
@@ -139,20 +160,34 @@ a:hover {
 
 /* "Ler mais" */
 .read-more {
-  font-size: 0.9rem;
-  color: #0375b4;
-  font-weight: bold;
-  text-decoration: none;
+  display: inline-block;
+  background: #025f9c;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .read-more:hover {
   text-decoration: underline;
+  background: #013f6b;
 }
 
 
 /* Barra lateral */
 #sidebar {
   flex: 1;
+  max-width: 28%;
+}
+
+#sidebar section {
+  padding: 1rem;
+  font-size: 0.9rem; /* Deixa o texto um pouco menor */
+}
+
+#tags-container a {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
 }
 
 #search-bar,
