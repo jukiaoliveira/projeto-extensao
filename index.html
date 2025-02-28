@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto de Extensão</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <nav id="navbar" aria-label="Navegação principal">
@@ -16,71 +17,85 @@
           <li><a href="#">Médicos</a></li>
           <li><a href="#">Depoimentos</a></li>
         </ul>
+        <button id="dark-mode-toggle">☾</button>
+
       </div>
     </nav>
     <div class="container">
       <div id="posts-container">
         <!-- Post 1 -->
         <div class="post">
-            <div class="post-title">Identificando</div>
-            <div class="post-image-container">
-                <img src="img/autism.jpg" alt="Imagem 1">
+          <div class="post-title">Identificando</div>
+          <div class="post-image-container">
+            <img src="img/autism.jpg" alt="Imagem 1" />
+          </div>
+          <div class="post-content">
+            <div class="description">
+              Texto aleatório para descrever o conteúdo do post. Fique à vontade
+              para editar.
             </div>
-            <div class="post-content">
-                <div class="description">Texto aleatório para descrever o conteúdo do post. Fique à vontade para editar.</div>
-            </div>
-            <div class="post-footer">
-                <div class="author">Por Júlia</div>
-                <a href="#" class="read-more">Ler mais</a>
-            </div>
+          </div>
+          <div class="post-footer">
+            <div class="author">Por Júlia</div>
+            <a href="#" class="read-more">Ler mais</a>
+          </div>
         </div>
-    
+
         <!-- Post 2 -->
         <div class="post">
-            <div class="post-title">Identificando</div>
-            <div class="post-image-container">
-                <img src="img/1.jpg" alt="Imagem 2">
+          <div class="post-title">Identificando</div>
+          <div class="post-image-container">
+            <img src="img/1.jpg" alt="Imagem 2" />
+          </div>
+          <div class="post-content">
+            <div class="description">
+              Texto aleatório para descrever o conteúdo do post. Fique à vontade
+              para editar.
             </div>
-            <div class="post-content">
-                <div class="description">Texto aleatório para descrever o conteúdo do post. Fique à vontade para editar.</div>
-            </div>
-            <div class="post-footer">
-                <div class="author">Por Júlia</div>
-                <a href="#" class="read-more">Ler mais</a>
-            </div>
+          </div>
+          <div class="post-footer">
+            <div class="author">Por Júlia</div>
+            <a href="#" class="read-more">Ler mais</a>
+          </div>
         </div>
-    
+
         <!-- Post 3 -->
         <div class="post">
-            <div class="post-title">Identificando</div>
-            <div class="post-image-container">
-                <img src="img/2.jpg" alt="Imagem 3">
+          <div class="post-title">Identificando</div>
+          <div class="post-image-container">
+            <img src="img/2.jpg" alt="Imagem 3" />
+          </div>
+          <div class="post-content">
+            <div class="description">
+              Texto aleatório para descrever o conteúdo do post. Fique à vontade
+              para editar.
             </div>
-            <div class="post-content">
-                <div class="description">Texto aleatório para descrever o conteúdo do post. Fique à vontade para editar.</div>
-            </div>
-            <div class="post-footer">
-                <div class="author">Por Júlia</div>
-                <a href="#" class="read-more">Ler mais</a>
-            </div>
+          </div>
+          <div class="post-footer">
+            <div class="author">Por Júlia</div>
+            <a href="#" class="read-more">Ler mais</a>
+          </div>
         </div>
-    
+
         <!-- Post 4 -->
         <div class="post">
-            <div class="post-title">Identificando</div>
-            <div class="post-image-container">
-                <img src="img/acolhendo.jpg" alt="Imagem 4">
+          <div class="post-title">Identificando</div>
+          <div class="post-image-container">
+            <img src="img/acolhendo.jpg" alt="Imagem 4" />
+          </div>
+          <div class="post-content">
+            <div class="description">
+              Texto aleatório para descrever o conteúdo do post. Fique à vontade
+              para editar.
             </div>
-            <div class="post-content">
-                <div class="description">Texto aleatório para descrever o conteúdo do post. Fique à vontade para editar.</div>
-            </div>
-            <div class="post-footer">
-                <div class="author">Por Júlia</div>
-                <a href="#" class="read-more">Ler mais</a>
-            </div>
+          </div>
+          <div class="post-footer">
+            <div class="author">Por Júlia</div>
+            <a href="#" class="read-more">Ler mais</a>
+          </div>
         </div>
-    </div>
-    
+      </div>
+
       <aside id="sidebar">
         <section id="search-bar">
           <h4>Busca</h4>
@@ -113,12 +128,24 @@
             <a href="#">Neurodiversidade</a>
           </div>
         </section>
+        <section id="testimonials">
+          <h4>Depoimentos</h4>
+          <div class="testimonial">
+            <p>"Descobrir o TEA na minha família foi um desafio, mas este site me ajudou a encontrar recursos valiosos!"</p>
+            <span>- Ana, mãe do Pedro</span>
+          </div>
+          <div class="testimonial">
+            <p>"Encontrei profissionais incríveis por aqui. Muito obrigado!"</p>
+            <span>- João, pai do Lucas</span>
+          </div>
+        </section>        
       </aside>
     </div>
     <footer id="footer">
-      <h2>Seu Espaço</h2>
-      <p>Informações atualizadas!</p>
-      <p>2025 © Panelinha</p>
-    </footer>
+      <h2>Sobre o Projeto</h2>
+      <p>Este site foi desenvolvido como parte do projeto de extensão da Faculdade FEPI.</p>
+      <p>Equipe: Grupo Panelinha</p>
+      <p>2025 © Projeto "Descobrimos o TEA na família. E agora?"</p>
+    </footer>    
   </body>
 </html>
