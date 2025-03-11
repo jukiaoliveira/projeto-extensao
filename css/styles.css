@@ -1,3 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #181818;
+    color: #e0e0e0;
+  }
+}
+
 /* estilos gerais */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -117,14 +124,14 @@ a:hover {
 
 /* Container da imagem */
 .post-image-container {
-  width: 100%;  /* Tamanho fixo para a div */
-  height: auto;  /* Tamanho fixo para a div */
+  width: 100%;  
+  height: auto;  
 }
 
 .post img {
-  width: 100%;  /* Define o tamanho fixo da imagem */
-  height: 200px;  /* Define o tamanho fixo da imagem */
-  object-fit: cover; /* Garante que a imagem cubra a área da div sem distorcer */
+  width: 100%;  
+  height: 200px;  
+  object-fit: cover; 
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
@@ -179,7 +186,6 @@ a:hover {
   background: #013f6b;
   transform: scale(1.05);
 }
-
 
 /* Barra lateral */
 #sidebar {
@@ -263,10 +269,148 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+body, .post, .faq-question, .faq-answer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Seção de Depoimentos */
+#testimonials {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#testimonials h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #0375b4;
+}
+
+.testimonial {
+  background: #f0f7ff;
+  color: #333;
+  padding: 1rem;
+  border-left: 4px solid #0375b4;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #025f9c;
+}
+
+#faqs {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #333;
+}
+
+#faqs h2 {
+  color: #0375b4;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: #025f9c;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.faq-answer {
+  padding: 0 10px;
+  background-color: #e0e0e0;
+  color: #333;
+  margin-top: 5px;
+  border-radius: 4px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.faq-answer.active {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.faq-question:hover {
+  background-color: #618ab3;
+}
+
+#stories {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #333;
+}
+
+#stories h2 {
+  color: #0375b4;
+}
+
+.hist-item {
+  margin-bottom: 10px;
+}
+
+.hist {
+  background-color: #025f9c;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.hist-answer {
+  padding: 0 10px;
+  background-color: #e0e0e0;
+  color: #333;
+  margin-top: 5px;
+  border-radius: 4px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.hist-answer.active {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.hist:hover {
+  background-color: #618ab3;
+}
+
 /* Modo Escuro */
 #dark-mode-toggle {
   background: none;
-  border: none;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
@@ -275,6 +419,10 @@ a:hover {
 
 #dark-mode-toggle:hover {
   opacity: 0.7;
+}
+
+.dark-mode #dark-mode-toggle {
+  border: 2px solid #03a9f4; 
 }
 
 .dark-mode {
@@ -295,19 +443,19 @@ a:hover {
 }
 
 .dark-mode .post {
-  background: #0b2a4a; /* Azul escuro suave */
-  color: #ffffff; /* Texto branco */
-  border: 1px solid #145a8f; /* Borda azul intermediária */
+  background: #0b2a4a; 
+  color: #ffffff; 
+  border: 1px solid #145a8f; 
 }
 
 .dark-mode .post-title {
-  color: #ffffff; /* Branco puro */
+  color: #ffffff; 
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
 }
 
 .dark-mode .post p {
-  color: #d1d1d1; /* Cinza claro para não ser tão forte como o branco */
+  color: #d1d1d1;
 }
 
 .dark-mode #footer {
@@ -328,7 +476,7 @@ a:hover {
 }
 
 .dark-mode .read-more {
-  background: #145a8f; /* Azul médio */
+  background: #145a8f; 
   color: #ffffff;
   border-radius: 8px;
   padding: 6px 12px;
@@ -336,23 +484,23 @@ a:hover {
 }
 
 .dark-mode .read-more:hover {
-  background: #1d74b3; /* Azul mais vibrante no hover */
+  background: #1d74b3; 
 }
 
 .dark-mode #search-bar,
 .dark-mode #categories,
 .dark-mode #tags {
-    background: #102d4e; /* Azul escuro para harmonia */
-    color: #ffffff; /* Texto branco para melhor leitura */
-    border: 1px solid #145a8f; /* Azul intermediário para destaque */
+    background: #102d4e; 
+    color: #ffffff; 
+    border: 1px solid #145a8f; 
     padding: 15px;
     border-radius: 5px;
 }
 
 /* Ajustando o campo de busca dentro do search-bar */
 .dark-mode #search-bar input {
-    background: #0b2138; /* Cinza bem escuro para contraste */
-    color: #ffffff; /* Texto branco */
+    background: #0b2138; 
+    color: #ffffff; 
     border: none;
     padding: 5px;
     border-radius: 3px;
@@ -361,76 +509,49 @@ a:hover {
 /* Melhorando os botões dentro desses blocos */
 .dark-mode #search-bar button,
 .dark-mode #tags span {
-    background: #145a8f; /* Azul médio */
-    color: #ffffff; /* Texto branco */
+    background: #145a8f; 
+    color: #ffffff; 
     border-radius: 5px;
     padding: 6px 10px;
     font-weight: bold;
 }
 
 .dark-mode #categories a {
-  background: #145a8f; /* Azul médio */
+  background: #145a8f; 
   color: #ffffff;
   border-radius: 5px;
-  padding: 12px 20px; /* Ajustando o espaçamento interno */
+  padding: 12px 20px; 
   font-weight: bold;
   text-align: center;
-  margin-bottom: 10px; /* Espaçamento entre os itens */
-  display: inline-block; /* Para garantir que o tamanho se ajuste ao conteúdo */
-  line-height: 1.5; /* Melhorando a altura da linha para espaçar as palavras */
+  margin-bottom: 10px; 
+  display: inline-block; 
+  line-height: 1.5; 
 }
 
 .dark-mode #categories a:hover {
-  background: #1d74b3; /* Azul vibrante ao passar o mouse */
+  background: #1d74b3;
 }
 
 
 .dark-mode #categories a:hover {
-  background: #1d74b3; /* Azul vibrante ao passar o mouse */
+  background: #1d74b3; 
 }
 
 /* Mudança de cor no hover para dar interatividade */
 .dark-mode #search-bar button:hover,
 .dark-mode #tags span:hover {
-    background: #1d74b3; /* Azul vibrante ao passar o mouse */
+    background: #1d74b3; 
 }
 
-/* Seção de Depoimentos */
-#testimonials {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-}
-
-#testimonials h4 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  color: #0375b4;
-}
-
-.testimonial {
-  background: #f0f7ff;
-  padding: 1rem;
-  border-left: 4px solid #0375b4;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.testimonial span {
-  display: block;
-  margin-top: 0.5rem;
-  font-weight: bold;
-  color: #025f9c;
-}
 
 .dark-mode #testimonials {
-  background: #1e1e1e;
+  background: #102d4e;
+  color: #ddd;
+  border: 1px solid #145a8f;
 }
 
 .dark-mode .testimonial {
-  background: #252525;
+  background: #333;
   color: #f0f7ff;
 }
 
@@ -438,22 +559,51 @@ a:hover {
   color: #03a9f4;
 }
 
+.dark-mode #faqs {
+  background: #102d4e;
+  color: #ddd;
+  border: 1px solid #145a8f;
+}
+
+.dark-mode .faq-question {
+  background-color: #033b6c;
+  color: #ffffff;
+}
+
+.dark-mode .faq-answer {
+  background-color: #2b2b2b;
+  color: #ddd;
+}
+
+.dark-mode .faq-question:hover {
+  background-color: #1d74b3;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   .container {
-      flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
   }
 
-  .post {
-      width: 100%;
+  #navbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .post-content {
-      text-align: center;
+  #posts-container {
+    max-width: 100%;
+    flex: 1;
   }
 
-  .description {
-      text-align: center;
+  #sidebar {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .post img {
+    height: 150px;
   }
 }
+
 
