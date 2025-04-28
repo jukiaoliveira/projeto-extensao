@@ -107,9 +107,7 @@ a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-.post:hover {
-  transform: translateY(-5px);
-}
+
 
 
 /* Título acima da imagem */
@@ -125,12 +123,12 @@ a:hover {
 /* Container da imagem */
 .post-image-container {
   width: 100%;  
-  height: auto;  
+  height: auto;
 }
 
 .post img {
   width: 100%;  
-  height: 200px;  
+  height: 250px;  
   object-fit: cover; 
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
