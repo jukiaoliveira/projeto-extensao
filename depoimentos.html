@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Depoimentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/depoimentos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+ 
+  <header id="navbar">
+    <div id="navbar-inner">
+      <h2>Deixe seu Depoimento</h2>
+      <a href="index.html" id="backToHome">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+  </header>
+
+  
+  <section id="testimonials">
+    <div class="testimonial-form">
+      <h3>Escreva seu Depoimento</h3>
+      <form id="testimonial-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+        <label for="testimonial">Depoimento:</label>
+        <textarea id="testimonial" name="testimonial" rows="5" placeholder="Conte-nos sobre sua experiência..." required></textarea>
+
+        <button type="submit" class="submit-btn">Enviar Depoimento</button>
+      </form>
+    </div>
+
+    
+    <div id="testimonials-display">
+      <h4>Depoimentos Recentes</h4>
+     
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; 2025 © Projeto "Descobrimos o TEA na família. E agora?</p>
+  </footer>
+
+  <script src="js/depoimentos.js"></script>
+</body>
+</html>
