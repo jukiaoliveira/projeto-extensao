@@ -220,6 +220,12 @@ a:hover {
   color: #0375b4;
 }
 
+h5 {
+  font-size: 1.0rem;
+  color: #0375b4;
+  margin-bottom: 0.5rem;
+}
+
 #search-bar form {
   display: flex;
 }
