@@ -107,9 +107,6 @@ a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-
-
-
 /* Título acima da imagem */
 .post-title {
   font-size: 1rem;
@@ -148,7 +145,7 @@ a:hover {
 
 /* Texto descritivo */
 .description {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   color: #666;
   text-align: left;
 }
@@ -185,6 +182,55 @@ a:hover {
   color: white;
   transform: scale(1.05);
 }
+
+.info-support {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.info-support h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95em;
+}
+
 
 /* Barra lateral */
 #sidebar {
@@ -261,12 +307,19 @@ h5 {
 }
 
 /* Rodapé */
-#footer {
-  border-top: 2px solid #ddd;
-  padding: 2rem;
+footer {
+  margin-top: 3rem;
+  background-color: #025f9c;
+  color: #fff;
   text-align: center;
-  background: white;
-  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+#footer h2 {
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 #footer h2,
