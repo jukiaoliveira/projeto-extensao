@@ -192,7 +192,7 @@ a:hover {
 .info-support h2 {
   font-size: 2em;
   margin-bottom: 30px;
-  color: #333;
+  color: #025f9c;
 }
 
 .info-cards {
@@ -681,5 +681,51 @@ body, .post, .faq-question, .faq-answer {
     height: 150px;
   }
 }
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1000; 
+  width: 80%; 
+  max-width: 1000px; 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 1000%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: -1; 
+}
+.modal-content {
+  background-color: white; 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal h3, .modal p {
+  margin: 0;
+  padding: 10px;
+}
+
+
+.close-btn {
+  color: #033b6c;
+  position: absolute;
+  top: 15px; 
+  right: 30px; 
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+
 
 

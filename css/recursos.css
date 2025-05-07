@@ -54,13 +54,15 @@ header#navbar {
 
 .topic {
     background-color: white;
+    margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;  /* Faz com que cada tópico ocupe toda a largura do contêiner */
     max-width: 800px;  /* Define uma largura máxima */
     text-align: left;
+    font-size: 1rem;
 }
 
 footer#footer {
