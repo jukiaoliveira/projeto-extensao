@@ -19,6 +19,15 @@ body {
   background: linear-gradient(180deg, #dceefb, #f0f7ff); /* Fundo da pag */
 }
 
+#logo {
+  position: absolute; 
+  top: 23px;
+  left: 30px; 
+  width: 50px; 
+  height: auto; 
+  border-radius: 50%;
+}
+
 /* Navbar */
 #navbar {
   padding: 1.5rem 2.5rem;
@@ -29,6 +38,8 @@ body {
 }
 
 #navbar h2 {
+  margin-left: 35px;
+  margin-right: 10px;
   color: white;
 }
 
@@ -688,11 +699,12 @@ body, .post, .faq-question, .faq-answer {
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
-  z-index: 1000; 
+  z-index: 1050; 
   width: 80%; 
   max-width: 1000px; 
   padding: 20px;
   border-radius: 8px;
+  opacity: 0;
 }
 
 .modal-overlay {
@@ -701,9 +713,12 @@ body, .post, .faq-question, .faq-answer {
   left: 0;
   width: 1000%;
   height: 1000%;
-  background-color: rgba(0, 0, 0, 0.7); 
-  z-index: -1; 
+  backdrop-filter: blur(6px); /* desfoca o fundo */
+  background-color: rgba(0, 0, 0, 0.4); /* escurece sutilmente */
+  z-index: 1040;
+  display: none;
 }
+
 .modal-content {
   background-color: white; 
   padding: 20px;
@@ -719,13 +734,23 @@ body, .post, .faq-question, .faq-answer {
 .close-btn {
   color: #033b6c;
   position: absolute;
-  top: 15px; 
-  right: 30px; 
+  top: 20px; 
+  right: 35px; 
   font-size: 30px;
   cursor: pointer;
   z-index: 1010;
 }
 
+.content.blurred {
+  filter: blur(5px);
+  pointer-events: none; /* impede clique no fundo */
+}
 
+.modal.show {
+  display: block;
+  opacity: 1;
+}
 
-
+.modal-overlay.show {
+  display: block;
+}

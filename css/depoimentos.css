@@ -12,6 +12,15 @@
     flex-direction: column;
     min-height: 100vh; 
   }
+
+  #logo {
+    border-radius: 50%;
+    position: absolute; 
+    top: 12px;
+    right: 30px; 
+    width: 50px; 
+    height: auto; 
+  }
   
   header#navbar {
     background-color: #025f9c;
