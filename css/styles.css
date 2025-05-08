@@ -1,10 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #181818;
+    color: #e0e0e0;
+  }
+}
+
 /* estilos gerais */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
@@ -13,20 +20,27 @@ body {
 }
 
 #logo {
-  width: 50px;
-  height: auto;
+  position: absolute; 
+  top: 23px;
+  left: 30px; 
+  width: 50px; 
+  height: auto; 
   border-radius: 50%;
-  margin-right: 1rem;
 }
 
 /* Navbar */
 #navbar {
-  width: 100%;
   padding: 1.5rem 2.5rem;
   border-bottom: 2px solid #ddd;
+  background: white;
   background: linear-gradient(90deg, #0375b4, #025f9c);
   color: white;
-  box-sizing: border-box;
+}
+
+#navbar h2 {
+  margin-left: 35px;
+  margin-right: 10px;
+  color: white;
 }
 
 #navbar-inner {
@@ -34,13 +48,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
-}
-
-#navbar h2 {
-  margin: 0;
-  color: white;
 }
 
 #nav-links {
@@ -59,14 +67,13 @@ body {
 
 #nav-links a:hover {
   background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
   color: #f0f7ff;
   text-decoration: underline;
 }
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -87,25 +94,26 @@ a:hover {
   padding: 2rem 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 /* Container dos posts */
 #posts-container {
-  flex: 0 0 70%;
+  flex: 2;
   max-width: 70%;
 }
 
 /* Post individual */
 .post {
+  display: flex;
+  flex-direction: column;
   background: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 1.5rem;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 900px;  
   margin: 0 auto 1.5rem auto;
   transition: transform 0.3s ease-in-out;
 }
@@ -122,14 +130,14 @@ a:hover {
 
 /* Container da imagem */
 .post-image-container {
-  width: 100%;
+  width: 100%;  
   height: auto;
 }
 
 .post img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+  width: 100%;  
+  height: 250px;  
+  object-fit: cover; 
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
@@ -148,7 +156,7 @@ a:hover {
 
 /* Texto descritivo */
 .description {
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #666;
   text-align: left;
 }
@@ -161,16 +169,22 @@ a:hover {
   margin-top: 1rem;
 }
 
+/* "Por Júlia" */
+.author {
+  font-size: 0.8rem;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
 /* "Ler mais" */
 .read-more {
-  background-color: #025f9c;
+  display: inline-block;
+  background: #025f9c;
   color: white;
-  font-size: 1rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .read-more:hover {
@@ -183,7 +197,7 @@ a:hover {
 .info-support {
   padding: 40px 20px;
   text-align: center;
-  width: 100%;
+  background-color: #f9f9f9;
 }
 
 .info-support h2 {
@@ -197,11 +211,9 @@ a:hover {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.cards {
+.card {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -211,7 +223,7 @@ a:hover {
   text-align: left;
 }
 
-.cards img {
+.card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -219,24 +231,22 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.cards h3 {
+.card h3 {
   font-size: 1.2em;
   color: #0077cc;
   margin-bottom: 10px;
 }
 
-.cards p {
+.card p {
   color: #555;
   font-size: 0.95em;
 }
 
+
 /* Barra lateral */
 #sidebar {
-  flex: 0 0 28%;
+  flex: 1;
   max-width: 28%;
-  padding: 1rem;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 #sidebar section {
@@ -268,7 +278,7 @@ a:hover {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #0375b4;
   margin-bottom: 0.5rem;
 }
@@ -318,7 +328,7 @@ footer {
 }
 
 #footer h2 {
-  font-size: 1rem;
+  font-size: 1.0rem;
   margin-bottom: 0.5rem;
   color: #fff;
 }
@@ -328,10 +338,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-body,
-.post,
-.faq-question,
-.faq-answer {
+body, .post, .faq-question, .faq-answer {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -366,6 +373,7 @@ body,
   font-weight: bold;
   color: #025f9c;
 }
+
 
 #faqs {
   background-color: #f9f9f9;
@@ -404,8 +412,7 @@ body,
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out,
-    padding 0.3s ease-in-out;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 .faq-answer.active {
@@ -419,12 +426,13 @@ body,
 }
 
 #send-testimonial {
-  background: #025f9c;
-  color: #ffffff;
-  border: 1px solid #145a8f;
-  padding: 15px;
-  border-radius: 5px;
+  background: #025f9c; 
+    color: #ffffff; 
+    border: 1px solid #145a8f; 
+    padding: 15px;
+    border-radius: 5px;
 }
+
 
 #send-testimonial a {
   color: white;
@@ -471,8 +479,7 @@ body,
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out,
-    padding 0.3s ease-in-out;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 .hist-answer.active {
@@ -483,6 +490,180 @@ body,
 
 .hist:hover {
   background-color: #618ab3;
+}
+
+/* Modo Escuro */
+#dark-mode-toggle {
+  background: none;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  opacity: 0.7;
+}
+
+.dark-mode #dark-mode-toggle {
+  border: 2px solid #03a9f4; 
+}
+
+.dark-mode {
+  background: #181818;
+  color: #e0e0e0;
+}
+
+.dark-mode #navbar {
+  background: linear-gradient(90deg, #025f9c, #014070);
+}
+
+.dark-mode a {
+  color: #03a9f4;
+}
+
+.dark-mode a:hover {
+  color: #ddd;
+}
+
+.dark-mode .post {
+  background: #0b2a4a; 
+  color: #ffffff; 
+  border: 1px solid #145a8f; 
+}
+
+.dark-mode .post-title {
+  color: #ffffff; 
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .post p {
+  color: #d1d1d1;
+}
+
+.dark-mode #footer {
+  background: #222;
+  color: #ccc;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="submit"] {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode #tags-container a {
+  background-color: #444;
+  color: #bbb;
+}
+
+.dark-mode .read-more {
+  background: #145a8f; 
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+.dark-mode .read-more:hover {
+  background: #1d74b3; 
+}
+
+.dark-mode #search-bar,
+.dark-mode #categories,
+.dark-mode #tags {
+    background: #102d4e; 
+    color: #ffffff; 
+    border: 1px solid #145a8f; 
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Ajustando o campo de busca dentro do search-bar */
+.dark-mode #search-bar input {
+    background: #0b2138; 
+    color: #ffffff; 
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Melhorando os botões dentro desses blocos */
+.dark-mode #search-bar button,
+.dark-mode #tags span {
+    background: #145a8f; 
+    color: #ffffff; 
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+.dark-mode #categories a {
+  background: #145a8f; 
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 12px 20px; 
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px; 
+  display: inline-block; 
+  line-height: 1.5; 
+}
+
+.dark-mode #categories a:hover {
+  background: #1d74b3;
+}
+
+
+.dark-mode #categories a:hover {
+  background: #1d74b3; 
+}
+
+/* Mudança de cor no hover para dar interatividade */
+.dark-mode #search-bar button:hover,
+.dark-mode #tags span:hover {
+    background: #1d74b3; 
+}
+
+
+.dark-mode #testimonials {
+  background: #102d4e;
+  color: #ddd;
+  border: 1px solid #145a8f;
+}
+
+.dark-mode .testimonial {
+  background: #333;
+  color: #f0f7ff;
+}
+
+.dark-mode .testimonial span {
+  color: #03a9f4;
+}
+
+.dark-mode #faqs {
+  background: #102d4e;
+  color: #ddd;
+  border: 1px solid #145a8f;
+}
+
+.dark-mode .faq-question {
+  background-color: #033b6c;
+  color: #ffffff;
+}
+
+.dark-mode .faq-answer {
+  background-color: #2b2b2b;
+  color: #ddd;
+}
+
+.dark-mode .faq-question:hover {
+  background-color: #1d74b3;
 }
 
 /* Responsivo */
@@ -498,11 +679,8 @@ body,
   }
 
   #posts-container {
-    flex: 0 0 100%;
-    display: flex;
     max-width: 100%;
-    flex-direction: column;
-    gap: 1rem;
+    flex: 1;
   }
 
   #sidebar {
@@ -515,137 +693,64 @@ body,
   }
 }
 
-button {
-  background-color: #3b82f6;
-  color: white;
-  border: none;
-  padding: 16px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-button:hover {
-  background-color: #2563eb;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 1.5rem auto;
-  transition: filter 0.3s ease-in-out;
-}
-
-.card h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.card p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.main-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
 .modal {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  background: #fff;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 1000px;
-  position: fixed;
-  z-index: 9999;
   display: none;
-}
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 9998;
-  display: none;
-  transition: opacity 0.3s ease;
-}
-.modal-content {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 25px;
+  z-index: 1050; 
+  width: 80%;
+  max-width: 1000px;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  z-index: 10000;
-  max-width: 600px;
-  width: 90%;
+  opacity: 1; 
+  background-color: white; 
 }
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #666;
+
+
+.modal.show {
+  display: block;
+  opacity: 1;
+  background-color: white;
 }
-.close-btn:hover {
-  color: #333;
+
+.modal-overlay.show {
+  display: block;
 }
-#modal-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #3b82f6;
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Escurece o fundo */
+  backdrop-filter: blur(6px);
+  z-index: 1040;
+  display: none;
+  border-radius: 30%;
 }
-#modal-text {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-  max-height: 300px;
-  overflow-y: auto;
+
+
+.modal-content {
+  position: relative;
+  z-index: 1060;
 }
 
 .close-button {
-  display: block;
-  margin-left: auto;
+  margin-top: 20px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #033b6c;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  bottom: 20px;
+  margin-left: 400px;
 }
-/* Efeito de blur no conteúdo */
-.blurred {
-  filter: blur(4px);
-  transition: filter 0.3s ease;
-}
-.modal.show {
-  display: block;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-}
-.modal-overlay.show {
-  display: block; /* Overlay fica visível quando a classe show é adicionada */
+
+.content.blurred {
+  filter: blur(5px);
+  pointer-events: none;
 }

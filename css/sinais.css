@@ -8,6 +8,15 @@
   body {
     background: linear-gradient(180deg, #dceefb, #f0f7ff); /* Fundo da pag */
   }
+
+  #logo {
+  border-radius: 50%;
+  position: absolute; 
+  top: 12px;
+  right: 30px; 
+  width: 50px; 
+  height: auto; 
+}
   
   #navbar {
     padding: 1.5rem 2.5rem;
@@ -74,7 +83,7 @@
   }
   
   footer {
-    margin-top: 3rem;
+    margin-top: auto;
     background-color: #025f9c;
     color: #fff;
     text-align: center;
