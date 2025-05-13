@@ -96,3 +96,4 @@ c:\Users\thiag\desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\refint\t
 c:\Users\thiag\desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\teaBackend.pdb
 C:\Users\thiag\desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\teaBackend.genruntimeconfig.cache
 C:\Users\thiag\desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\ref\teaBackend.dll
+c:\Users\thiag\desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-e5kljuqw1p.gz

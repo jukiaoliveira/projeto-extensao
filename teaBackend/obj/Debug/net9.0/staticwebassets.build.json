@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ui2HyXaQKOg7xaifcYrYwLfw8NUPDUJkjqWoeNxbcSc=",
+  "Hash": "duNEe10UQ2ELyp73Jj3SBnq4h5b8a5CvkrDS+0RMnwo=",
   "Source": "teaBackend",
   "BasePath": "_content/teaBackend",
   "Mode": "Default",
@@ -1151,6 +1151,27 @@
       "OriginalItemSpec": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+      "Identity": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\Debug\\net9.0\\compressed\\v83rlfxc72-e5kljuqw1p.gz",
+      "SourceId": "teaBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/teaBackend",
+      "RelativePath": "css/style#[.{fingerprint=e5kljuqw1p}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5t1ojs79ht",
+      "Integrity": "KbLgSFhXpjppi3Zd9qJX7xBbuDW/h0bjOxbg+n2+m/c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\style.css"
+    },
+    {
       "Identity": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\Debug\\net9.0\\compressed\\vretnxgtw7-37tfw0ft22.gz",
       "SourceId": "teaBackend",
       "SourceType": "Discovered",
@@ -1422,6 +1443,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\style.css",
+      "SourceId": "teaBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\",
+      "BasePath": "_content/teaBackend",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e5kljuqw1p",
+      "Integrity": "vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\favicon.ico",
@@ -3022,6 +3064,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\Debug\\net9.0\\compressed\\v83rlfxc72-e5kljuqw1p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000343170899"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2913"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KbLgSFhXpjppi3Zd9qJX7xBbuDW/h0bjOxbg+n2+m/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:09:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:09:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css.gz",
+      "AssetFile": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\Debug\\net9.0\\compressed\\v83rlfxc72-e5kljuqw1p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2913"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KbLgSFhXpjppi3Zd9qJX7xBbuDW/h0bjOxbg+n2+m/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:09:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KbLgSFhXpjppi3Zd9qJX7xBbuDW/h0bjOxbg+n2+m/c="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.e5kljuqw1p.css",
+      "AssetFile": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\Debug\\net9.0\\compressed\\v83rlfxc72-e5kljuqw1p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000343170899"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2913"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KbLgSFhXpjppi3Zd9qJX7xBbuDW/h0bjOxbg+n2+m/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:09:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5kljuqw1p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.e5kljuqw1p.css",
+      "AssetFile": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:09:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5kljuqw1p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vtuV3A42mxHirAHA4HNLbCz8qIHhu5i6eMXd457Nqgs="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.e5kljuqw1p.css.gz",
+      "AssetFile": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\Debug\\net9.0\\compressed\\v83rlfxc72-e5kljuqw1p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2913"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KbLgSFhXpjppi3Zd9qJX7xBbuDW/h0bjOxbg+n2+m/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:09:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5kljuqw1p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KbLgSFhXpjppi3Zd9qJX7xBbuDW/h0bjOxbg+n2+m/c="
         }
       ]
     },
