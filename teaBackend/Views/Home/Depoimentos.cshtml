@@ -18,15 +18,21 @@
 <section id="testimonials">
     <div class="testimonial-form">
         <h3>Escreva seu Depoimento</h3>
-        <form id="testimonial-form">
+        <form id="testimonial-form" method="post">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            @* <span asp-validation-for="NomeAutor" class="text-danger"></span> *@
+            
+            <label for="name">Idade:</label>
+            <input type="text" id="age" name="age" placeholder="Digite sua idade" required>
+            @* <span asp-validation-for="IdadeAutor" class="text-danger"></span> *@
 
             <label for="testimonial">Depoimento:</label>
             <textarea id="testimonial" name="testimonial" rows="5" placeholder="Conte-nos sobre sua experiência..."
                 required></textarea>
+            @* <span asp-validation-for="Texto" class="text-danger"></span> *@
 
-            <button type="submit" class="submit-btn">Enviar Depoimento</button>
+            <button type="submit" class="submit-btn" asp-controller="Home" asp-action="Create">Enviar Depoimento</button>
         </form>
     </div>
 
@@ -37,12 +43,11 @@
         @foreach (var depoimento in Model)
         {
             <div class="testimonial-card">
-                <h5>@depoimento.NomeAutor</h5>
-                <h5>@depoimento.IdadeAutor</h5>
+                <h5>@depoimento.NomeAutor - @depoimento.IdadeAutor anos</h5>
                 <p>@depoimento.Texto</p>
             </div>
         }
-        
+
     </div>
 </section>
 
