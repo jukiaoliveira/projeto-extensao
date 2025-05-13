@@ -1,41 +1,53 @@
+@model List<Depoimento>
+
 <head>
     <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
 </head>
 
 <header id="navbar">
     <div id="navbar-inner">
-      <img src="./img/logo.jfif" alt="Logo" id="logo">
-      <h2>Deixe seu Depoimento</h2>
-      <a href="index.html" id="backToHome">
-        <i class="fas fa-arrow-left"></i>
-      </a>
+        <img src="./img/logo.jfif" alt="Logo" id="logo">
+        <h2>Deixe seu Depoimento</h2>
+        <a href="index.html" id="backToHome">
+            <i class="fas fa-arrow-left"></i>
+        </a>
     </div>
-  </header>
+</header>
 
 
-  <section id="testimonials">
+<section id="testimonials">
     <div class="testimonial-form">
-      <h3>Escreva seu Depoimento</h3>
-      <form id="testimonial-form">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+        <h3>Escreva seu Depoimento</h3>
+        <form id="testimonial-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
 
-        <label for="testimonial">Depoimento:</label>
-        <textarea id="testimonial" name="testimonial" rows="5" placeholder="Conte-nos sobre sua experiência..." required></textarea>
+            <label for="testimonial">Depoimento:</label>
+            <textarea id="testimonial" name="testimonial" rows="5" placeholder="Conte-nos sobre sua experiência..."
+                required></textarea>
 
-        <button type="submit" class="submit-btn">Enviar Depoimento</button>
-      </form>
+            <button type="submit" class="submit-btn">Enviar Depoimento</button>
+        </form>
     </div>
 
 
     <div id="testimonials-display">
-      <h4>Depoimentos Recentes</h4>
+        <h4>Depoimentos Recentes</h4>
 
+        @foreach (var depoimento in Model)
+        {
+            <div class="testimonial-card">
+                <h5>@depoimento.NomeAutor</h5>
+                <h5>@depoimento.IdadeAutor</h5>
+                <p>@depoimento.Texto</p>
+            </div>
+        }
+        
     </div>
-  </section>
+</section>
 
-  <footer id="footer">
+<footer id="footer">
     <p>&copy; 2025 © Projeto "Descobrimos o TEA na família. E agora?</p>
-  </footer>
+</footer>
 
-  @* <script src="js/depoimentos.js" asp-append-version="true"></script> *@
+@* <script src="js/depoimentos.js" asp-append-version="true"></script> *@
