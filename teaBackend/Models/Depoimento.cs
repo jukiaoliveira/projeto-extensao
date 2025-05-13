@@ -6,10 +6,10 @@ namespace teaBackend.Models
     {
         public int Id {get; set;}
         [MaxLength(100)]
-        public string NomeAutor {get; set;}
+        public string? NomeAutor {get; set;}
         
         public int IdadeAutor {get; set;}
 
-        public string Texto {get; set;}
+        public string? Texto {get; set;}
     }
 }
