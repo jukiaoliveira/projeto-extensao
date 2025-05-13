@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("teaBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d979c5ae9d239a70f959b1d7719faa6d59fd1f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2419c2138cc50ebdaf0efad37b19f37ac2c52663")]
 [assembly: System.Reflection.AssemblyProductAttribute("teaBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("teaBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
