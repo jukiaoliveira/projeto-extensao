@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\teaBackend.70eyrv2vv1.bundle.scp.css"
     },
     {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\depoimentos.css",
+      "PackagePath": "staticwebassets\\css\\depoimentos.css"
+    },
+    {
       "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -15,6 +19,54 @@
     {
       "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\1.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\2.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\acolhendo.jpg",
+      "PackagePath": "staticwebassets\\img\\acolhendo.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\autism.jpg",
+      "PackagePath": "staticwebassets\\img\\autism.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\card1.jpg",
+      "PackagePath": "staticwebassets\\img\\card1.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\card2.jpg",
+      "PackagePath": "staticwebassets\\img\\card2.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\card3.jpg",
+      "PackagePath": "staticwebassets\\img\\card3.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\logo.jfif",
+      "PackagePath": "staticwebassets\\img\\logo.jfif"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\post1.jpg",
+      "PackagePath": "staticwebassets\\img\\post1.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\post2.jpg",
+      "PackagePath": "staticwebassets\\img\\post2.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\img\\post4.jpg",
+      "PackagePath": "staticwebassets\\img\\post4.jpg"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\js\\depoimentos.js",
+      "PackagePath": "staticwebassets\\js\\depoimentos.js"
     },
     {
       "Id": "c:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\js\\site.js",
