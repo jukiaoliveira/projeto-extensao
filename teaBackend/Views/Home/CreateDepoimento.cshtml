@@ -1,0 +1,47 @@
+@model DepoimentoDto
+
+<head>
+    <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
+</head>
+
+<header id="navbar">
+    <div id="navbar-inner">
+        <img src="./img/logo.jfif" alt="Logo" id="logo">
+        <h2>Deixe seu Depoimento</h2>
+        <a href="index.html" id="backToHome">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </div>
+</header>
+
+
+<section id="testimonials">
+    <div class="testimonial-form">
+        <h3>Escreva seu Depoimento</h3>
+        <form id="testimonial-form" method="post" asp-controller="Home" asp-action="CreateDepoimento">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required asp-for="NomeAutor" />
+            <span asp-validation-for="NomeAutor" class="text-danger"></span>
+           
+            
+            <label for="name">Idade:</label>
+            <input type="text" id="age" placeholder="Digite sua idade" required asp-for="IdadeAutor" />
+            <span asp-validation-for="IdadeAutor" class="text-danger"></span>
+            
+
+            <label for="testimonial">Depoimento:</label>
+            <textarea id="testimonial" rows="5" placeholder="Conte-nos sobre sua experiência..."
+                required asp-for="Texto"></textarea>
+                <span asp-validation-for="Texto" class="text-danger"></span>
+            
+            <button type="submit" class="submit-btn">Enviar Depoimento</button>
+        </form>
+    </div>
+
+</section>
+
+<footer id="footer">
+    <p>&copy; 2025 © Projeto "Descobrimos o TEA na família. E agora?</p>
+</footer>
+
+@* <script src="js/depoimentos.js" asp-append-version="true"></script> *@

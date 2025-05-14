@@ -4,9 +4,6 @@ namespace teaBackend.Models
 {
     public class DepoimentoDto
     {
-        [Key]
-        public int Id { get; set; }
-        
         [Required, MaxLength(100)]
         public string? NomeAutor { get; set; }
         

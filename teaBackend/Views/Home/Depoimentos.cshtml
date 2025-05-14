@@ -7,33 +7,41 @@
 <header id="navbar">
     <div id="navbar-inner">
         <img src="./img/logo.jfif" alt="Logo" id="logo">
-        <h2>Deixe seu Depoimento</h2>
+        <h2>Depoimentos</h2>
         <a href="index.html" id="backToHome">
             <i class="fas fa-arrow-left"></i>
         </a>
     </div>
 </header>
 
-
 <section id="testimonials">
-    <div class="testimonial-form">
+    @* <div class="testimonial-form">
         <h3>Escreva seu Depoimento</h3>
         <form id="testimonial-form" method="post">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-            @* <span asp-validation-for="NomeAutor" class="text-danger"></span> *@
+           
             
             <label for="name">Idade:</label>
             <input type="text" id="age" name="age" placeholder="Digite sua idade" required>
-            @* <span asp-validation-for="IdadeAutor" class="text-danger"></span> *@
+            
 
             <label for="testimonial">Depoimento:</label>
             <textarea id="testimonial" name="testimonial" rows="5" placeholder="Conte-nos sobre sua experiência..."
                 required></textarea>
-            @* <span asp-validation-for="Texto" class="text-danger"></span> *@
+            
 
             <button type="submit" class="submit-btn" asp-controller="Home" asp-action="Create">Enviar Depoimento</button>
         </form>
+    </div> *@
+
+    <div class="row">
+        <div class="col">
+            <h2>Deixe seu depoimento: </h2>
+            <p>Compartilhe suas experiências e ajude-nos a melhorar o tea</p>
+            <p class="text-md-justify">Seu depoimento é muito importante para nós! Ao compartilhar sua história, você pode ajudar outras pessoas a entenderem melhor o TEA e a lidarem com os desafios que ele traz. Sua experiência pode ser uma fonte de inspiração e apoio para aqueles que estão passando por situações semelhantes.</p>
+            <a class="btn btn-primary btn-block mb-5" asp-controller="Home" asp-action="CreateDepoimento">Cadastrar Depoimento</a>
+        </div>
     </div>
 
 
