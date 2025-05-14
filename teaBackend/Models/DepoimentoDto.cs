@@ -10,6 +10,7 @@ namespace teaBackend.Models
         [Required]
         public int IdadeAutor { get; set; }
         [Required]
+        [ProibirPalavras(new [] {"doença", "cura", "retardado", "normal", "deficiência"})]
         public string? Texto { get; set; }
     }
 }
