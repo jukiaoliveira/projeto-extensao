@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Svbr4YFvzLc=",
+  "dgSpecHash": "aglDO5Opr80=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj",
+  "projectFilePath": "C:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thiag\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\thiag\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj": {}
+    "C:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj": {
+    "C:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj",
+        "projectUniqueName": "C:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj",
         "projectName": "teaBackend",
-        "projectPath": "C:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj",
+        "projectPath": "C:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\teaBackend.csproj",
         "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thiag\\desktop\\git\\projeto-extensao\\teaBackend\\obj\\",
+        "outputPath": "C:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

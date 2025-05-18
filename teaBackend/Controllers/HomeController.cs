@@ -19,17 +19,20 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Depoimentos() {
+    public IActionResult Depoimentos()
+    {
         var depoimentos = _context.Depoimentos.OrderByDescending(d => d.Id).ToList();
         return View(depoimentos);
     }
 
-    public IActionResult CreateDepoimento(){
+    public IActionResult CreateDepoimento()
+    {
         return View();
     }
 
     [HttpPost]
-    public IActionResult CreateDepoimento(DepoimentoDto depoimentodto){
+    public IActionResult CreateDepoimento(DepoimentoDto depoimentodto)
+    {
         if (!ModelState.IsValid)
         {
             return View(depoimentodto);
