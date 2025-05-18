@@ -50,4 +50,10 @@ public class HomeController : Controller
 
         return RedirectToAction("Depoimentos", "Home");
     }
+
+    public IActionResult Medicos()
+    {
+        var medicos = _context.Medicos.OrderByDescending(d => d.Id).ToList();
+        return View(medicos);
+    }
 }

@@ -1,0 +1,45 @@
+@model List<Medico>
+
+<head>
+    <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
+</head>
+
+<body>
+
+
+    <header id="navbar">
+        <div id="navbar-inner">
+            <h2>Profissionais e Clínicas</h2>
+            <img src="./img/logo.jfif" alt="Logo" id="logo">
+
+            <a href="index.html" id="backToHome">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <section id="testimonials">
+        <div class="testimonial-form">
+
+            <h3>Especialistas Recomendados</h3>
+            
+            @foreach (var medico in Model)
+            {
+                <div class="testimonial-card">
+                <p><strong>@medico.Nome</strong></p>
+                <p>@medico.Especialidade</p>
+                <p>📞 @medico.Telefone | ✉️ @medico.Email</p>
+                <p><em>@medico.Clinica</em></p>
+            </div>
+            }
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2025 © Projeto "Descobrimos o TEA na família. E agora?</p>
+    </footer>
+
+</body>
+
+</html>

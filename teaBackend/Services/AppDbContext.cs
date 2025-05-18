@@ -12,5 +12,6 @@ namespace teaBackend.Services
         }
 
         public DbSet<Depoimento> Depoimentos {get; set;}
+        public DbSet<Medico> Medicos {get; set;}
     }
 }
