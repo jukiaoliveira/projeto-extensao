@@ -17,69 +17,69 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = teaBackend
 build_property.RootNamespace = teaBackend
-build_property.ProjectDir = C:\Users\thiag\Desktop\git\projeto-extensao\teaBackend\
+build_property.ProjectDir = C:\Users\User\Desktop\Extensão\teaBackend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\thiag\Desktop\git\projeto-extensao\teaBackend
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\Extensão\teaBackend
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Autismo.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Autismo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRpc21vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/CreateDepoimento.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/CreateDepoimento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVEZXBvaW1lbnRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Depoimentos.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Depoimentos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXBvaW1lbnRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Importancia.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Importancia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbXBvcnRhbmNpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Index.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Medicos.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Medicos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZWRpY29zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Privacy.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Recursos.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Recursos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWN1cnNvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Home/Sinais.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Home/Sinais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaW5haXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Shared/Error.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/_ViewImports.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/_ViewStart.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thiag/Desktop/git/projeto-extensao/teaBackend/Views/Shared/_Layout.cshtml]
+[c:/Users/User/Desktop/Extensão/teaBackend/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9xqc2uln8f

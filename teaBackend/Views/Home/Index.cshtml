@@ -1,221 +1,291 @@
 ﻿@{
-    
+
 }
 
 <head>
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 </head>
 
-<div class="content">
-  <nav id="navbar" aria-label="Navegação principal">
-    <div id="navbar-inner">
-      <img src="./img/logo.jfif" alt="Logo" id="logo" />
-      <h2>Descobrimos o TEA na família. E agora?</h2>
-      <ul id="nav-links">
-        <li><a href="#">Início</a></li>
-        <li><a asp-asp-controller="Home" asp-action="Medicos">Médicos</a></li>
-        <li><a asp-controller="Home" asp-action="Depoimentos">Depoimentos</a></li>
-      </ul>
-      <button id="dark-mode-toggle">☾</button>
+<nav id="navbar" aria-label="Navegação principal">
+  <div id="navbar-inner">
+    <img src="./img/logo.jfif" alt="Logo" id="logo" />
+    <h2>Descobrimos o TEA na família. E agora?</h2>
+    <ul id="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a asp-controller="Home" asp-action="Medicos">Médicos</a></li>
+      <li><a asp-controller="Home" asp-action="Depoimentos">Depoimentos</a></li>
+</nav>
+<div class="container">
+  <div id="posts-container">
+    <!-- Post 1 -->
+    <div class="post">
+      <div class="post-title">Identificando</div>
 
-    </div>
-  </nav>
-  <div class="container">
-    <div id="posts-container">
-      <!-- Post 1 -->
-      <div class="post">
-        <div class="post-title">Identificando</div>
-        <div class="post-image-container">
-          <img src="img/post1.jpg" alt="Imagem 1" />
-        </div>
-        <div class="post-content">
-          <div class="description">
-            Notou comportamentos diferentes e está com dúvidas sobre o autismo? Entenda os primeiros sinais e saiba como
-            buscar orientação.
-          </div>
-        </div>
-        <div class="post-footer">
-          <a href="#" class="read-more" data-key="Identificando">Ler mais</a>
+      <div class="post-content">
+        <div class="description">
+          Notou comportamentos diferentes e está com dúvidas sobre o autismo?
+          Entenda os primeiros sinais, como a ausência de contato visual, dificuldade de interação social e
+          comportamentos repetitivos.
+          A identificação precoce é essencial para garantir o apoio adequado.
         </div>
       </div>
 
-      <section class="info-support">
-        <h2>Informações e Apoio sobre o Autismo</h2>
-        <div class="info-cards">
-          <a asp-asp-controller="Home" asp-action="Autismo" class="card">
-            <img src="img/card1.jpg" alt="O que é autismo?">
-            <h3>O que é autismo?</h3>
-            <p>Saiba mais sobre o transtorno do espectro autista e suas características.</p>
-          </a>
-          <a asp-controller="Home" asp-action="Sinais" class="card">
-            <img src="img/card2.jpg" alt="Sinais de autismo">
-            <h3>Sinais do autismo</h3>
-            <p>Identifique sinais comuns do autismo em diferentes idades.</p>
-          </a>
-          <a href="importancia.html" class="card">
-            <img src="img/card3.jpg" alt="Diagnóstico recente">
-            <h3>Diagnóstico recente</h3>
-            <p>Encontre apoio e recursos após receber o diagnóstico do seu filho.</p>
-          </a>
-        </div>
-      </section>
-
-
-      <!-- Post 2 -->
-      <div class="post">
-        <div class="post-title">Entendendo o Autismo</div>
-        <div class="post-image-container">
-          <img src="img/post2.jpg" alt="Imagem 2" />
-        </div>
-        <div class="post-content">
-          <div class="description">
-            Aprenda sobre o transtorno do espectro autista, suas características e como ele se manifesta em diferentes
-            fases da vida.
-          </div>
-        </div>
-        <div class="post-footer">
-          <a href="#" class="read-more" data-key="Entendendo o Autismo">Ler mais</a>
-        </div>
-      </div>
-
-      <!-- Post 3 -->
-      <div class="post">
-        <div class="post-title">O Papel da Família</div>
-        <div class="post-image-container">
-          <img src="img/2.jpg" alt="Imagem 3" />
-        </div>
-        <div class="post-content">
-          <div class="description">
-            A presença da família faz toda a diferença. Veja como acolher, apoiar e fortalecer os vínculos no dia a dia
-            com uma pessoa autista.
-          </div>
-        </div>
-        <div class="post-footer">
-          <a href="#" class="read-more" data-key="O Papel da Família">Ler mais</a>
-        </div>
-      </div>
-
-      <!-- Post 4 -->
-      <div class="post">
-        <div class="post-title">Quando Tudo Parece Difícil</div>
-        <div class="post-image-container">
-          <img src="img/post4.jpg" alt="Imagem 4" />
-        </div>
-        <div class="post-content">
-          <div class="description">
-            O diagnóstico e os desafios diários podem ser pesados. Você não está sozinho — entenda como cuidar da sua
-            saúde emocional e onde buscar apoio.
-          </div>
-        </div>
-        <div class="post-footer">
-          <a href="#" class="read-more" data-key="Quando Tudo Parece Difícil">Ler mais</a>
-        </div>
+      <div class="post-footer">
+        <button class="read-more" data-modal="modal-identificando">Ler mais</button>
       </div>
     </div>
 
-    <aside id="sidebar">
-      <section id="search-bar">
-        <h4>Busca</h4>
-        <form>
-          <input type="text" placeholder="Sua dúvida aqui" />
-          <input type="submit" value="Buscar" />
-        </form>
-      </section>
-      <section id="categories">
-        <h4> <a asp-controller="Home" asp-action="Recursos">Recurso para Pais</a></h4>
-        <h5>Aqui você encontra: </h5>
-        <nav>
-          <ul>
-            <li>Mitos e Verdades</li>
-            <li>Profissionais Indicados</li>
-            <li>Videos e Materiais Educativos</li>
-            <li>Depoimentos e Experiências</li>
-            <li>Dúvidas Frequentes</li>
-          </ul>
-        </nav>
-      </section>
-      <section id="tags">
-        <h4>Tags</h4>
-        <div id="tags-container">
-          <a href="https://www.instagram.com/explore/search/keyword/?q=%23autismocomamor">#AutismoComAmor</a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=%23inclus%C3%A3oautista">#InclusãoAutista</a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=%23fam%C3%ADliasespeciais">#FamíliasEspeciais</a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=%23mundoazulautismo">#MundoAzul</a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=%23autismonainf%C3%A2ncia">#AutismoNaInfância</a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=%23apoioaospais">#ApoioAosPais</a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=%23neurodiversidade">#Neurodiversidade</a>
-        </div>
-      </section>
-      <section id="testimonials">
-        <h4>Depoimentos</h4>
-        <div class="testimonial">
-          <p>"Descobrir o TEA na minha família foi um desafio, mas este site me ajudou a encontrar recursos valiosos!"
-          </p>
-          <span>- Ana, mãe do Pedro</span>
-        </div>
-        <div class="testimonial">
-          <p>"Encontrei profissionais incríveis por aqui. Muito obrigado!"</p>
-          <span>- João, pai do Lucas</span>
-        </div>
-        <section id="send-testimonial">
-          <a href="depoimentos.html" class="btn-send-testimonial">Enviar Depoimento</a>
-        </section>
-      </section>
-      <section id="faqs">
-        <h2>Perguntas frequentes</h2>
-        <div class="faq-item">
-          <button class="faq-question">O que é o TEA?</button>
-          <div class="faq-answer">
-            <p>O TEA (Transtorno do Espectro Autista) é uma condição neurológica que afeta a comunicação, o
-              comportamento e a forma como a pessoa interage com o mundo. Ele se manifesta de maneiras diferentes em
-              cada indivíduo e pode variar de leve a severo.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Como posso ajudar meu filho com TEA?</button>
-          <div class="faq-answer">
-            <p>Você pode ajudar seu filho com TEA oferecendo apoio emocional, mantendo uma rotina estruturada, buscando
-              acompanhamento profissional (como psicólogos, terapeutas ocupacionais e fonoaudiólogos) e aprendendo sobre
-              o autismo para compreender melhor suas necessidades e comportamentos.</p>
-          </div>
-        </div>
-      </section>
-      <section id="stories">
-        <h2>Mais Histórias</h2>
-        <div class="hist-item">
-          <button class="hist">Meu filho tem 5 anos e ainda não fala...</button>
-          <div class="hist-answer">
-            <p>"Desde pequeno, percebi que meu filho não falava como outras crianças. Aos 5 anos, ainda não se
-              comunicava verbalmente, o que me gerava muita preocupação. Depois de buscar ajuda, o diagnóstico de TEA
-              trouxe explicações e nos orientou a iniciar um acompanhamento. Agora, estamos trabalhando juntos para
-              ajudar ele a se expressar de maneira confortável."</p>
-          </div>
-        </div>
-        <div class="hist-item">
-          <button class="hist">Descobri o TEA na adolescência</button>
-          <div class="hist-answer">
-            <p>"Sempre senti que algo era diferente, mas só na adolescência entendi que tinha TEA. As dificuldades em me
-              socializar e lidar com mudanças finalmente ganharam explicação. Hoje, me sinto mais confortável com o
-              diagnóstico, que me ajuda a entender melhor minhas próprias reações e a me adaptar."</p>
-          </div>
-        </div>
-      </section>
-    </aside>
-  </div>
-  <footer id="footer">
-    <h2>Sobre o Projeto</h2>
-    <p>Este site foi desenvolvido como parte do projeto de extensão da Faculdade FEPI.</p>
-    <p>Equipe: Grupo Panelinha</p>
-    <p>2025 © Projeto "Descobrimos o TEA na família. E agora?"</p>
-  </footer>
 
-  <div id="modal" class="modal">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-      <h2 id="modal-title">Título do Modal</h2>
-      <p id="modal-text">Conteúdo do Modal</p>
-      <button class="close-button">Fechar</button>
+    <section class="info-support">
+      <h2>Informações e Apoio sobre o Autismo</h2>
+      <div class="info-cards">
+        <a asp-asp-controller="Home" asp-action="Autismo" class="card">
+          <img src="img/card1.jpg" alt="O que é autismo?">
+          <h3>O que é autismo?</h3>
+          <p>Saiba mais sobre o transtorno do espectro autista e suas características.</p>
+        </a>
+        <a asp-controller="Home" asp-action="Sinais" class="card">
+          <img src="img/card2.jpg" alt="Sinais de autismo">
+          <h3>Sinais do autismo</h3>
+          <p>Identifique sinais comuns do autismo em diferentes idades.</p>
+        </a>
+        <a href="importancia.html" class="card">
+          <img src="img/card3.jpg" alt="Diagnóstico recente">
+          <h3>Diagnóstico recente</h3>
+          <p>Encontre apoio e recursos após receber o diagnóstico do seu filho.</p>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Post 2 -->
+    <div class="post">
+      <div class="post-title">Entendendo o Autismo</div>
+      <div class="post-image-container">
+        <img src="img/post2.jpg" alt="Imagem 2" />
+      </div>
+      <div class="post-content">
+        <div class="description">
+          Aprenda sobre o transtorno do espectro autista, suas características e como ele se manifesta em diferentes
+          fases da vida.
+        </div>
+      </div>
+      <div class="post-footer">
+        <a href="#" class="read-more" data-key="Entendendo o Autismo">Ler mais</a>
+      </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+      <div class="post-title">O Papel da Família</div>
+      <div class="post-image-container">
+        <img src="img/2.jpg" alt="Imagem 3" />
+      </div>
+      <div class="post-content">
+        <div class="description">
+          A presença da família faz toda a diferença. Veja como acolher, apoiar e fortalecer os vínculos no dia a dia
+          com uma pessoa autista.
+        </div>
+      </div>
+      <div class="post-footer">
+        <a href="#" class="read-more" data-key="O Papel da Família">Ler mais</a>
+      </div>
+    </div>
+
+    <!-- Post 4 -->
+    <div class="post">
+      <div class="post-title">Quando Tudo Parece Difícil</div>
+      <div class="post-image-container">
+        <img src="img/post4.jpg" alt="Imagem 4" />
+      </div>
+      <div class="post-content">
+        <div class="description">
+          O diagnóstico e os desafios diários podem ser pesados. Você não está sozinho — entenda como cuidar da sua
+          saúde emocional e onde buscar apoio.
+        </div>
+      </div>
+      <div class="post-footer">
+        <a href="#" class="read-more" data-key="Quando Tudo Parece Difícil">Ler mais</a>
+      </div>
     </div>
   </div>
 
+  <aside id="sidebar">
+    <section id="search-bar">
+      <h4>Busca</h4>
+      <form id="search-bar-form">
+        <input type="text" placeholder="Sua dúvida aqui" />
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+    <section id="categories">
+      <h4> <a asp-controller="Home" asp-action="Recursos">Recurso para Pais</a></h4>
+      <h5>Aqui você encontra: </h5>
+      <nav>
+        <ul>
+          <li>Mitos e Verdades</li>
+          <li>Profissionais Indicados</li>
+          <li>Videos e Materiais Educativos</li>
+          <li>Depoimentos e Experiências</li>
+          <li>Dúvidas Frequentes</li>
+        </ul>
+      </nav>
+    </section>
+    <section id="tags">
+      <h4>Tags</h4>
+      <div id="tags-container">
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23autismocomamor">#AutismoComAmor</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23inclus%C3%A3oautista">#InclusãoAutista</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23fam%C3%ADliasespeciais">#FamíliasEspeciais</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23mundoazulautismo">#MundoAzul</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23autismonainf%C3%A2ncia">#AutismoNaInfância</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23apoioaospais">#ApoioAosPais</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=%23neurodiversidade">#Neurodiversidade</a>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h4>Depoimentos</h4>
+      <div class="testimonial">
+        <p>"Descobrir o TEA na minha família foi um desafio, mas este site me ajudou a encontrar recursos valiosos!"
+        </p>
+        <span>- Ana, mãe do Pedro</span>
+      </div>
+      <div class="testimonial">
+        <p>"Encontrei profissionais incríveis por aqui. Muito obrigado!"</p>
+        <span>- João, pai do Lucas</span>
+      </div>
+      <section id="send-testimonial">
+        <a href="depoimentos.html" class="btn-send-testimonial">Enviar Depoimento</a>
+      </section>
+    </section>
+    <section id="faqs">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq-item">
+        <button class="faq-question">O que é o TEA?</button>
+        <div class="faq-answer">
+          <p>O TEA (Transtorno do Espectro Autista) é uma condição neurológica que afeta a comunicação, o
+            comportamento e a forma como a pessoa interage com o mundo. Ele se manifesta de maneiras diferentes em
+            cada indivíduo e pode variar de leve a severo.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Como posso ajudar meu filho com TEA?</button>
+        <div class="faq-answer">
+          <p>Você pode ajudar seu filho com TEA oferecendo apoio emocional, mantendo uma rotina estruturada, buscando
+            acompanhamento profissional (como psicólogos, terapeutas ocupacionais e fonoaudiólogos) e aprendendo sobre
+            o autismo para compreender melhor suas necessidades e comportamentos.</p>
+        </div>
+      </div>
+    </section>
+    <section id="stories">
+      <h2>Mais Histórias</h2>
+      <div class="hist-item">
+        <button class="hist">Meu filho tem 5 anos e ainda não fala...</button>
+        <div class="hist-answer">
+          <p>"Desde pequeno, percebi que meu filho não falava como outras crianças. Aos 5 anos, ainda não se
+            comunicava verbalmente, o que me gerava muita preocupação. Depois de buscar ajuda, o diagnóstico de TEA
+            trouxe explicações e nos orientou a iniciar um acompanhamento. Agora, estamos trabalhando juntos para
+            ajudar ele a se expressar de maneira confortável."</p>
+        </div>
+      </div>
+      <div class="hist-item">
+        <button class="hist">Descobri o TEA na adolescência</button>
+        <div class="hist-answer">
+          <p>"Sempre senti que algo era diferente, mas só na adolescência entendi que tinha TEA. As dificuldades em me
+            socializar e lidar com mudanças finalmente ganharam explicação. Hoje, me sinto mais confortável com o
+            diagnóstico, que me ajuda a entender melhor minhas próprias reações e a me adaptar."</p>
+        </div>
+      </div>
+    </section>
+  </aside>
 </div>
+<footer id="footer">
+  <h2>Sobre o Projeto</h2>
+  <p>Este site foi desenvolvido como parte do projeto de extensão da Faculdade FEPI.</p>
+  <p>Equipe: Grupo Panelinha</p>
+  <p>2025 © Projeto "Descobrimos o TEA na família. E agora?"</p>
+</footer>
+
+<div id="modal-identificando" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Mais sobre os primeiros sinais</h2>
+
+    <p>Os primeiros sinais de autismo incluem:</p>
+    <ul>
+      <li>Ausência de contato visual</li>
+      <li>Dificuldade na fala e comunicação</li>
+      <li>Movimentos repetitivos e resistência à mudança</li>
+    </ul>
+
+    <p>A identificação precoce é essencial para oferecer o suporte adequado desde a infância até a vida adulta.</p>
+
+    <h3>Assista também:</h3>
+    <div class="video-links">
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=cN1c0oDZdzQ" target="_blank">
+          <img src="https://img.youtube.com/vi/cN1c0oDZdzQ/hqdefault.jpg" alt="10 sinais do autismo em bebês">
+        </a>
+        <p><strong>10 sinais do autismo em bebês</strong><br>
+        Conheça os sinais mais comuns do TEA que podem surgir ainda no primeiro ano de vida.</p>
+      </div>
+
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=bjb2vUOjSSQ" target="_blank">
+          <img src="https://img.youtube.com/vi/bjb2vUOjSSQ/hqdefault.jpg" alt="Autismo em adolescentes">
+        </a>
+        <p><strong>Autismo em adolescentes</strong><br>
+        Veja como o autismo se manifesta durante a adolescência e os desafios enfrentados nessa fase.</p>
+      </div>
+
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=eMb6aYXMgx8" target="_blank">
+          <img src="https://img.youtube.com/vi/eMb6aYXMgx8/hqdefault.jpg" alt="Autismo em adultos">
+        </a>
+        <p><strong>Autismo em adultos</strong><br>
+        Sintomas, autoconhecimento e diagnóstico tardio: como o TEA pode se apresentar na vida adulta.</p>
+      </div>
+
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=B8FNO3rukUM" target="_blank">
+          <img src="https://img.youtube.com/vi/B8FNO3rukUM/hqdefault.jpg" alt="Tudo sobre o TEA">
+        </a>
+        <p><strong>Entenda tudo sobre o TEA</strong><br>
+        Um vídeo completo para tirar dúvidas e entender o autismo em todas as fases da vida.</p>
+      </div>
+
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=xBa45k3J95g" target="_blank">
+          <img src="https://img.youtube.com/vi/xBa45k3J95g/hqdefault.jpg" alt="Teste diagnóstico de autismo">
+        </a>
+        <p><strong>Como é feito o teste para diagnóstico</strong><br>
+        Saiba quais exames e avaliações são usados no diagnóstico do TEA e como buscar ajuda profissional.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  document.querySelectorAll(".read-more").forEach(btn => {
+    btn.addEventListener("click", function () {
+      const modalId = this.getAttribute("data-modal");
+      document.getElementById(modalId).style.display = "block";
+    });
+  });
+
+  document.querySelectorAll(".modal .close").forEach(closeBtn => {
+    closeBtn.addEventListener("click", function () {
+      this.closest(".modal").style.display = "none";
+    });
+  });
+
+  window.addEventListener("click", function (event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+</script>
