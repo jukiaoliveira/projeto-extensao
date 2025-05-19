@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/autismo.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\autismo.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tPq7zSgIacO\u002BXXrGununb/yE0ubuJ2otR9xhYfA5DfI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2204"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tPq7zSgIacO\u002BXXrGununb/yE0ubuJ2otR9xhYfA5DfI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/autismo.otqu633tqg.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\autismo.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"otqu633tqg"},{"Name":"integrity","Value":"sha256-tPq7zSgIacO\u002BXXrGununb/yE0ubuJ2otR9xhYfA5DfI="},{"Name":"label","Value":"_content/teaBackend/css/autismo.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2204"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tPq7zSgIacO\u002BXXrGununb/yE0ubuJ2otR9xhYfA5DfI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/teaBackend/css/depoimentos.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\depoimentos.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -11,6 +23,42 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zd0abjm91o"},{"Name":"integrity","Value":"sha256-d9d3iWVD5wV8/\u002Bom59RuxeFKyGfgjSr3Ye5Brngbku4="},{"Name":"label","Value":"_content/teaBackend/css/depoimentos.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2988"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022d9d3iWVD5wV8/\u002Bom59RuxeFKyGfgjSr3Ye5Brngbku4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 14:25:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/importancia.6ahqnab13u.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\importancia.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6ahqnab13u"},{"Name":"integrity","Value":"sha256-Alem0HYr8Vb67TpXICCUWj2zcUrMIk10/xdwG8PrXgw="},{"Name":"label","Value":"_content/teaBackend/css/importancia.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1629"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Alem0HYr8Vb67TpXICCUWj2zcUrMIk10/xdwG8PrXgw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/importancia.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\importancia.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Alem0HYr8Vb67TpXICCUWj2zcUrMIk10/xdwG8PrXgw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1629"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Alem0HYr8Vb67TpXICCUWj2zcUrMIk10/xdwG8PrXgw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/recursos.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\recursos.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hBeKvpxA5dvFlMUS8K4JWnKk5BAvU7NnWePbB1uqye0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2166"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hBeKvpxA5dvFlMUS8K4JWnKk5BAvU7NnWePbB1uqye0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/recursos.oxs45eip26.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\recursos.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oxs45eip26"},{"Name":"integrity","Value":"sha256-hBeKvpxA5dvFlMUS8K4JWnKk5BAvU7NnWePbB1uqye0="},{"Name":"label","Value":"_content/teaBackend/css/recursos.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2166"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hBeKvpxA5dvFlMUS8K4JWnKk5BAvU7NnWePbB1uqye0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/sinais.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\sinais.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CrGuxdHFhjg7142VEacYlEqGAstsI9437KStZey4vrs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1787"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CrGuxdHFhjg7142VEacYlEqGAstsI9437KStZey4vrs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/teaBackend/css/sinais.ye7m6znln1.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\sinais.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ye7m6znln1"},{"Name":"integrity","Value":"sha256-CrGuxdHFhjg7142VEacYlEqGAstsI9437KStZey4vrs="},{"Name":"label","Value":"_content/teaBackend/css/sinais.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1787"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CrGuxdHFhjg7142VEacYlEqGAstsI9437KStZey4vrs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 13:56:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/teaBackend/css/site.b9sayid5wm.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

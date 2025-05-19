@@ -233,3 +233,7 @@ C:\Users\thiag\desktop\git\projeto-extensao\teaBackend\bin\Debug\net9.0\ru\Micro
 C:\Users\thiag\desktop\git\projeto-extensao\teaBackend\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\thiag\desktop\git\projeto-extensao\teaBackend\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\thiag\desktop\git\projeto-extensao\teaBackend\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+c:\Users\thiag\Desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\1q21abrg32-otqu633tqg.gz
+c:\Users\thiag\Desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\yws0ycwfd2-6ahqnab13u.gz
+c:\Users\thiag\Desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\mrgiaghstz-oxs45eip26.gz
+c:\Users\thiag\Desktop\git\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\vp24iaszpp-ye7m6znln1.gz

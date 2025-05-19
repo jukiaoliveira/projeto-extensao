@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(180deg, #dceefb, #f0f7ff); /* Fundo da pag */
+  }
+
+  #logo {
+  border-radius: 50%;
+  position: absolute; 
+  top: 12px;
+  right: 30px; 
+  width: 50px; 
+  height: auto; 
+}
+  
+  #navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #ddd;
+    background: white;
+    background: linear-gradient(90deg, #0375b4, #025f9c);
+    color: white;
+  }
+  
+  #navbar ul {
+    list-style: none;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  #navbar a:hover {
+    color: #f0f7ff;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+  }
+
+.info-card {
+    background-color: #f0f8ff;
+    border-left: 5px solid #025f9c;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card h2 {
+    font-size: 1.6rem;
+    color: #025f9c;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  .info-card ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .info-card ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    margin-top: auto;
+    background-color: #025f9c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }

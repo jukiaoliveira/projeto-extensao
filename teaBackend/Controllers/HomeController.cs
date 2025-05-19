@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client;
 using teaBackend.Models;
 using teaBackend.Services;
 
@@ -55,5 +56,25 @@ public class HomeController : Controller
     {
         var medicos = _context.Medicos.OrderByDescending(d => d.Id).ToList();
         return View(medicos);
+    }
+
+    public IActionResult Autismo()
+    {
+        return View();
+    }
+
+    public IActionResult Importancia()
+    {
+        return View();
+    }
+
+    public IActionResult Recursos()
+    {
+        return View();
+    }
+
+    public IActionResult Sinais()
+    {
+        return View();
     }
 }

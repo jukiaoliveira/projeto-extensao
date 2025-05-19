@@ -5,8 +5,24 @@
       "PackagePath": "staticwebassets\\teaBackend.70eyrv2vv1.bundle.scp.css"
     },
     {
+      "Id": "c:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\autismo.css",
+      "PackagePath": "staticwebassets\\css\\autismo.css"
+    },
+    {
       "Id": "c:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\depoimentos.css",
       "PackagePath": "staticwebassets\\css\\depoimentos.css"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\importancia.css",
+      "PackagePath": "staticwebassets\\css\\importancia.css"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\recursos.css",
+      "PackagePath": "staticwebassets\\css\\recursos.css"
+    },
+    {
+      "Id": "c:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\sinais.css",
+      "PackagePath": "staticwebassets\\css\\sinais.css"
     },
     {
       "Id": "c:\\Users\\thiag\\Desktop\\git\\projeto-extensao\\teaBackend\\wwwroot\\css\\site.css",

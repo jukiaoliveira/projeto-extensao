@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#logo {
+    border-radius: 50%;
+    position: absolute; 
+    top: 19px;
+    right: 30px; 
+    width: 50px; 
+    height: auto; 
+  }
+
+header#navbar {
+    background-color: #025f9c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#backToHome {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #025f9c; 
+    color: white; 
+    padding: 8px; 
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToHome:hover {
+    background-color: #013f6b;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza as divs horizontalmente */
+    justify-content: center; /* Centraliza as divs verticalmente */
+    text-align: center;
+    width: 80%;  /* Limita a largura */
+    margin: 0 auto;  /* Garante o centro da tela */
+    flex: 1;
+}
+
+.topic {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;  /* Faz com que cada tópico ocupe toda a largura do contêiner */
+    max-width: 800px;  /* Define uma largura máxima */
+    text-align: left;
+    font-size: 1rem;
+}
+
+footer#footer {
+    background-color: #025f9c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+footer#footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    header#navbar {
+        padding: 15px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .topic {
+        padding: 15px;
+    }
+
+    footer#footer {
+        padding: 15px;
+    }
+}
