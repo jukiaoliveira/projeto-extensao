@@ -1,15 +1,19 @@
-
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/recursos.css"> 
+    <link rel="stylesheet" href="~/css/recursos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
 
     <header id="navbar">
-      <img src="./img/logo.jfif" alt="Logo" id="logo">
+        <a asp-action="Index" asp-controller="Home" id="backToHome">
+            <i class="fas fa-arrow-left"></i>
+        </a>
         <h1>Recursos para Pais de Crianças com TEA</h1>
+        <img src="~/img/logo.jfif" alt="Logo" id="logo">
     </header>
+
 
     <a asp-action="Index" asp-controller="Home" id="backToHome">
         <i class="fas fa-arrow-left"></i>
@@ -19,23 +23,29 @@
 
         <div class="topic">
             <h2>Mitos e Verdades</h2>
-            <p>Existem muitos mitos sobre o Transtorno do Espectro Autista. Aqui estão alguns dos mais comuns, seguidos de explicações baseadas em fatos:</p>
+            <p>Existem muitos mitos sobre o Transtorno do Espectro Autista. Aqui estão alguns dos mais comuns, seguidos
+                de explicações baseadas em fatos:</p>
             <ul>
                 <li><strong>Mito:</strong> "Todas as pessoas com autismo têm deficiência intelectual."</li>
-                <li><strong>Verdade:</strong> "O autismo é um espectro, e cada pessoa tem habilidades e desafios únicos. Muitas pessoas com TEA têm inteligência dentro da média ou até acima da média."</li>
+                <li><strong>Verdade:</strong> "O autismo é um espectro, e cada pessoa tem habilidades e desafios únicos.
+                    Muitas pessoas com TEA têm inteligência dentro da média ou até acima da média."</li>
                 <li><strong>Mito:</strong> "O autismo é causado por vacinas."</li>
-                <li><strong>Verdade:</strong> "Estudos científicos não mostram nenhuma ligação entre vacinas e autismo. O autismo tem uma base genética e não é causado por fatores ambientais, como vacinas."</li>
+                <li><strong>Verdade:</strong> "Estudos científicos não mostram nenhuma ligação entre vacinas e autismo.
+                    O autismo tem uma base genética e não é causado por fatores ambientais, como vacinas."</li>
             </ul>
         </div>
 
         <div class="topic">
             <h2>Profissionais Indicados</h2>
-            <p>O diagnóstico e acompanhamento de crianças com TEA envolvem uma equipe multidisciplinar, composta por profissionais especializados, como:</p>
+            <p>O diagnóstico e acompanhamento de crianças com TEA envolvem uma equipe multidisciplinar, composta por
+                profissionais especializados, como:</p>
             <ul>
                 <li><strong>Psicólogo:</strong> Trabalha com terapias comportamentais e emocionais.</li>
                 <li><strong>Fonoaudiólogo:</strong> Ajudar no desenvolvimento da fala e comunicação.</li>
-                <li><strong>Terapeuta ocupacional:</strong> Auxilia no desenvolvimento de habilidades motoras e na adaptação ao cotidiano.</li>
-                <li><strong>Pediatra ou neurologista:</strong> Responsável pelo diagnóstico e acompanhamento médico geral.</li>
+                <li><strong>Terapeuta ocupacional:</strong> Auxilia no desenvolvimento de habilidades motoras e na
+                    adaptação ao cotidiano.</li>
+                <li><strong>Pediatra ou neurologista:</strong> Responsável pelo diagnóstico e acompanhamento médico
+                    geral.</li>
             </ul>
         </div>
 
@@ -43,28 +53,39 @@
             <h2>Vídeos e Materiais Educativos</h2>
             <p>Aqui estão alguns recursos úteis para pais e educadores:</p>
             <ul>
-                <li><a href="https://www.youtube.com/results?search_query=autismo" target="_blank">Vídeos sobre TEA no YouTube</a></li>
-                <li><a href="https://www.autismo.org.br/" target="_blank">Site com materiais educativos sobre autismo</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=autismo" target="_blank">Vídeos sobre TEA no
+                        YouTube</a></li>
+                <li><a href="https://www.autismo.org.br/" target="_blank">Site com materiais educativos sobre
+                        autismo</a></li>
                 <li><a href="https://www.autismoemfoco.com.br/" target="_blank">Artigos e recursos sobre o TEA</a></li>
             </ul>
         </div>
 
         <div class="topic">
             <h2>Depoimentos e Experiências</h2>
-            <p>Aqui você pode encontrar relatos de outros pais e familiares que enfrentam o TEA. Compartilhar experiências é uma forma poderosa de apoio mútuo:</p>
+            <p>Aqui você pode encontrar relatos de outros pais e familiares que enfrentam o TEA. Compartilhar
+                experiências é uma forma poderosa de apoio mútuo:</p>
             <ul>
-                <li><a href="https://www.instagram.com/explore/tags/autismo/" target="_blank">Hashtags e histórias no Instagram sobre o TEA</a></li>
-                <li><a href="https://www.youtube.com/results?search_query=depoimentos+sobre+autismo" target="_blank">Depoimentos de pais e especialistas no YouTube</a></li>
+                <li><a href="https://www.instagram.com/explore/tags/autismo/" target="_blank">Hashtags e histórias no
+                        Instagram sobre o TEA</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=depoimentos+sobre+autismo"
+                        target="_blank">Depoimentos de pais e especialistas no YouTube</a></li>
             </ul>
         </div>
 
         <div class="topic">
             <h2>Dúvidas Frequentes</h2>
-            <p>Aqui estão algumas perguntas comuns de pais de crianças com TEA, com respostas que podem ajudar a esclarecer dúvidas:</p>
+            <p>Aqui estão algumas perguntas comuns de pais de crianças com TEA, com respostas que podem ajudar a
+                esclarecer dúvidas:</p>
             <ul>
-                <li><strong>Como sei se meu filho tem TEA?</strong> O diagnóstico do TEA deve ser feito por um profissional especializado, como um pediatra ou psicólogo. O quanto antes você procurar ajuda, melhor será o acompanhamento.</li>
-                <li><strong>Qual a melhor forma de ajudar meu filho a se comunicar?</strong> Terapias como fonoaudiologia e métodos alternativos de comunicação, como a Comunicação Alternativa e Aumentativa, podem ser muito úteis.</li>
-                <li><strong>O TEA tem cura?</strong> Não há cura para o TEA, mas a intervenção precoce pode ajudar muito no desenvolvimento da criança.</li>
+                <li><strong>Como sei se meu filho tem TEA?</strong> O diagnóstico do TEA deve ser feito por um
+                    profissional especializado, como um pediatra ou psicólogo. O quanto antes você procurar ajuda,
+                    melhor será o acompanhamento.</li>
+                <li><strong>Qual a melhor forma de ajudar meu filho a se comunicar?</strong> Terapias como
+                    fonoaudiologia e métodos alternativos de comunicação, como a Comunicação Alternativa e Aumentativa,
+                    podem ser muito úteis.</li>
+                <li><strong>O TEA tem cura?</strong> Não há cura para o TEA, mas a intervenção precoce pode ajudar muito
+                    no desenvolvimento da criança.</li>
             </ul>
         </div>
 
@@ -75,4 +96,5 @@
     </footer>
 
 </body>
+
 </html>

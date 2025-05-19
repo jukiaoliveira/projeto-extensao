@@ -92,3 +92,78 @@ footer {
   font-size: 0.9rem;
   margin-top: auto;
 }
+
+@media (max-width: 768px) {
+  #navbar {
+    padding: 1rem 1.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0;
+  }
+
+  #navbar a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    display: block;
+    margin: 0.3rem 0;
+  }
+
+  #logo {
+    position: static;
+    display: block;
+    margin: 0.5rem auto 1rem;
+    width: 40px;
+  }
+
+  .info-card {
+    padding: 1.2rem;
+    margin: 1.5rem 1rem;
+    max-width: 100%;
+  }
+
+  .info-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .info-card p,
+  .info-card ul {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #navbar a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  #logo {
+    width: 35px;
+  }
+
+  .info-card {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .info-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .info-card p,
+  .info-card ul {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+}

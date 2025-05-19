@@ -158,19 +158,43 @@ footer#footer p {
   margin: 0;
 }
 
-/* Responsividade: Quando a tela for menor que 768px */
+/* Responsividade para telas até 768px (tablets e pequenos laptops) */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
   }
 
   header#navbar {
-    padding: 15px;
+    padding: 15px 10px;
+  }
+
+  #navbar-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  #navbar-title {
+    position: static;
+    transform: none;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  #backToHome {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
   }
 
   #testimonials {
-    margin: 20px;
+    margin: 20px 15px;
     padding: 15px;
+    max-width: 100%;
   }
 
   .testimonial-form input,
@@ -187,3 +211,63 @@ footer#footer p {
     padding: 15px;
   }
 }
+
+/* Responsividade para telas pequenas, até 480px (celulares) */
+@media (max-width: 480px) {
+  header#navbar {
+    padding: 12px 10px;
+  }
+
+  #navbar-inner {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  #navbar-title {
+    font-size: 1.1rem;
+  }
+
+  #backToHome {
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+  }
+
+  #testimonials {
+    margin: 15px 10px;
+    padding: 12px;
+  }
+
+  .testimonial-form h3 {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-form label {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-form input,
+  .testimonial-form textarea {
+    font-size: 0.85rem;
+  }
+
+  .submit-btn {
+    padding: 7px 14px;
+    font-size: 0.85rem;
+  }
+
+  #testimonials-display h4 {
+    font-size: 1.3rem;
+  }
+
+  footer#footer {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}
+

@@ -537,7 +537,36 @@ footer {
   max-width: 600px;
   border-radius: 8px;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; /* espaço entre os elementos */
 }
+
+.modal-content ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+.modal-content li {
+  margin-bottom: 0.5rem;
+}
+
+.modal-content h2,
+.modal-content h3 {
+  color: #025f9c;
+  margin-bottom: 0.5rem;
+}
+
+.modal-content p {
+  max-width: 500px;
+}
+
 
 .modal .close {
   color: #aaa;
@@ -598,29 +627,106 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .container {
+  /* Navbar */
+  #navbar {
     flex-direction: column;
-    padding: 1rem;
+    align-items: flex-start;
+    padding: 16px;
   }
 
   #navbar-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
   }
 
-  #posts-container {
+  #nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #nav-links a {
+    width: 100%;
+    padding: 0.8rem 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  #posts-container,
+  #sidebar {
     max-width: 100%;
-    flex: 1;
+    width: 100%;
   }
 
   #sidebar {
-    max-width: 100%;
     margin-top: 2rem;
   }
 
+  .post {
+    padding: 1rem;
+  }
+
   .post img {
-    height: 150px;
+    height: auto;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
-/* FIM DO ARQUIVO */
+@media (max-width: 480px) {
+  #navbar h2 {
+    font-size: 1rem;
+  }
+
+  .post-title {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .read-more {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  #search-bar input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  #search-bar input[type="submit"],
+  #search-bar button {
+    font-size: 0.9rem;
+    min-width: 70px;
+  }
+
+  .faq-question,
+  .hist {
+    font-size: 1rem;
+  }
+
+  #info-support h2,
+  #stories h2,
+  #faqs h2,
+  #testimonials h4 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
+    padding: 1rem 0.5rem;
+  }
+}
+

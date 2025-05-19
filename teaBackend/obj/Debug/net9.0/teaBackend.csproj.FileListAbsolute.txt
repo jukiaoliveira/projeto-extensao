@@ -388,10 +388,6 @@ c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\teaBackend.sourcelin
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\scopedcss\bundle\teaBackend.styles.css
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\scopedcss\projectbundle\teaBackend.bundle.scp.css
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\1q21abrg32-otqu633tqg.gz
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\yws0ycwfd2-6ahqnab13u.gz
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\mrgiaghstz-oxs45eip26.gz
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\vp24iaszpp-ye7m6znln1.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\ca5tyyy00o-b9sayid5wm.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\cn5ockkjq0-61n19gt1b8.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\pbe68wzyqs-i8bp92w2y3.gz
@@ -467,5 +463,9 @@ c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\teaBackend.pdb
 C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\teaBackend.genruntimeconfig.cache
 C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\ref\teaBackend.dll
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\fn68tw8lyj-3r8b2a0bt1.gz
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-ikua8omvyl.gz
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-0fhz0ezz57.gz
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\1q21abrg32-dhrsqzw0pc.gz
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-jvc3aaqxsd.gz
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\yws0ycwfd2-6ka3uvovhe.gz
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\mrgiaghstz-bwb2blrv1r.gz
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\vp24iaszpp-kh45b1v4aw.gz
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-rbrddb3ivs.gz
