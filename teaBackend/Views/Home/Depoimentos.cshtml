@@ -2,17 +2,13 @@
 
 <head>
     <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
-</head>
-
-<head>
-    <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
     <!-- Font Awesome para o ícone da seta -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <header id="navbar">
     <div id="navbar-inner">
-        <a href="index.html" id="backToHome" title="Voltar">
+        <a asp-controller="Home" asp-action="Index" id="backToHome" title="Voltar">
             <i class="fas fa-arrow-left"></i>
         </a>
 
@@ -28,8 +24,12 @@
         <div class="col">
             <h2>Deixe seu depoimento: </h2>
             <p>Compartilhe suas experiências e ajude-nos a melhorar o tea</p>
-            <p class="text-md-justify">Seu depoimento é muito importante para nós! Ao compartilhar sua história, você pode ajudar outras pessoas a entenderem melhor o TEA e a lidarem com os desafios que ele traz. Sua experiência pode ser uma fonte de inspiração e apoio para aqueles que estão passando por situações semelhantes.</p>
-            <a class="btn btn-primary btn-block mb-5" asp-controller="Home" asp-action="CreateDepoimento">Cadastrar Depoimento</a>
+            <p class="text-md-justify">Seu depoimento é muito importante para nós! Ao compartilhar sua história, você
+                pode ajudar outras pessoas a entenderem melhor o TEA e a lidarem com os desafios que ele traz. Sua
+                experiência pode ser uma fonte de inspiração e apoio para aqueles que estão passando por situações
+                semelhantes.</p>
+            <a class="btn btn-primary btn-block mb-5" asp-controller="Home" asp-action="CreateDepoimento">Cadastrar
+                Depoimento</a>
         </div>
     </div>
 
