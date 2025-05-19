@@ -4,36 +4,25 @@
     <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
 </head>
 
+<head>
+    <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
+    <!-- Font Awesome para o ícone da seta -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
 <header id="navbar">
     <div id="navbar-inner">
-        <img src="./img/logo.jfif" alt="Logo" id="logo">
-        <h2>Depoimentos</h2>
-        <a href="index.html" id="backToHome">
+        <a href="index.html" id="backToHome" title="Voltar">
             <i class="fas fa-arrow-left"></i>
         </a>
+
+        <h2 id="navbar-title">Depoimentos</h2>
+
+        <img src="~/img/logo.jfif" alt="Logo" id="logo" />
     </div>
 </header>
 
 <section id="testimonials">
-    @* <div class="testimonial-form">
-        <h3>Escreva seu Depoimento</h3>
-        <form id="testimonial-form" method="post">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-           
-            
-            <label for="name">Idade:</label>
-            <input type="text" id="age" name="age" placeholder="Digite sua idade" required>
-            
-
-            <label for="testimonial">Depoimento:</label>
-            <textarea id="testimonial" name="testimonial" rows="5" placeholder="Conte-nos sobre sua experiência..."
-                required></textarea>
-            
-
-            <button type="submit" class="submit-btn" asp-controller="Home" asp-action="Create">Enviar Depoimento</button>
-        </form>
-    </div> *@
 
     <div class="row">
         <div class="col">
@@ -62,5 +51,3 @@
 <footer id="footer">
     <p>&copy; 2025 © Projeto "Descobrimos o TEA na família. E agora?</p>
 </footer>
-
-@* <script src="js/depoimentos.js" asp-append-version="true"></script> *@
