@@ -464,8 +464,8 @@ C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\teaBackend.genruntim
 C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\ref\teaBackend.dll
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\fn68tw8lyj-3r8b2a0bt1.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\1q21abrg32-dhrsqzw0pc.gz
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-jvc3aaqxsd.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\yws0ycwfd2-6ka3uvovhe.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\mrgiaghstz-bwb2blrv1r.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\vp24iaszpp-kh45b1v4aw.gz
-c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-rbrddb3ivs.gz
+C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-un4vqva0xn.gz
+C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-ahsm5byckz.gz

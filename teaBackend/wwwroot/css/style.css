@@ -11,6 +11,8 @@
 body {
   background: linear-gradient(180deg, #dceefb, #f0f7ff);
   color: #222;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 /* Navbar */
@@ -24,6 +26,8 @@ body {
   align-items: center;
   position: relative;
   padding: 0 32px;
+  /* Acessibilidade: contraste */
+  border-bottom: 3px solid #025f9c;
 }
 
 #navbar h2 {
@@ -49,9 +53,14 @@ body {
   border-radius: 50%;
 }
 
+#logo[aria-label] {
+  outline: 2px dashed #fff;
+  outline-offset: 2px;
+}
+
 #nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #nav-links a {
@@ -60,26 +69,18 @@ body {
   font-weight: bold;
   padding: 0.5rem;
   border-radius: 5px;
+  outline: none;
+}
+
+#nav-links a:focus {
+  background: #f0f7ff;
+  color: #025f9c;
+  outline: 2px solid #fff;
 }
 
 #nav-links a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   color: #f0f7ff;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #025f9c;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: #013f6b;
-  text-decoration: underline;
 }
 
 /* Layout principal */
@@ -131,14 +132,18 @@ a:hover {
   height: auto;
 }
 
+/* Acessibilidade: imagens com borda visível no foco */
 .post img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border 0.2s;
 }
-
+.post img:focus {
+  outline: 3px solid #025f9c;
+  outline-offset: 2px;
+}
 .post img:hover {
   transform: scale(1.02);
 }
@@ -170,6 +175,7 @@ a:hover {
   margin-bottom: 0.3rem;
 }
 
+/* Acessibilidade: botão com foco visível */
 .read-more {
   display: inline-block;
   background: #025f9c;
@@ -177,6 +183,15 @@ a:hover {
   padding: 8px 12px;
   border-radius: 5px;
   transition: background 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.read-more:focus {
+  outline: 2px solid #0375b4;
+  outline-offset: 2px;
+  background: #013f6b;
 }
 
 .read-more:hover {
@@ -235,6 +250,20 @@ a:hover {
   font-size: 0.95em;
 }
 
+.post:hover, .card:hover {
+  box-shadow: 0 4px 24px rgba(0,127,255,0.13);
+  transform: translateY(-3px) scale(1.01);
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 2px solid #0375b4;
+  outline-offset: 2px;
+}
+
+h2, h3 {
+  font-size: clamp(1.2rem, 2.5vw, 2.3rem);
+}
+
 /* Sidebar */
 #sidebar {
   flex: 1;
@@ -273,6 +302,14 @@ h5 {
 #search-bar form {
   display: flex;
   width: 100%;
+  gap: 0.2rem;
+}
+
+/* Acessibilidade: label para campo de busca */
+#search-bar label {
+  font-weight: bold;
+  color: #025f9c;
+  margin-right: 0.5rem;
 }
 
 #search-bar input[type="text"] {
@@ -288,13 +325,16 @@ h5 {
   margin-right: 5px;
 }
 
+#search-bar input[type="text"]:focus {
+  border-color: #0375b4;
+}
+
+/* Acessibilidade: botão com mínimo de contraste e foco */
 #search-bar input[type="submit"],
 #search-bar button {
-  /* CORREÇÕES AQUI 👇 */
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 0 1.2rem;
   background: #025f9c;
   color: #fff;
@@ -308,14 +348,16 @@ h5 {
   box-sizing: border-box;
   white-space: nowrap;
   margin: 0;
-
-  /* Evite usar % se o botão está espremido */
-  /* width: 30%; ← REMOVA ou ajuste */
   width: auto;
-  min-width: 90px; /* mínimo para não ficar pequeno demais */
+  min-width: 90px;
 }
 
-
+#search-bar input[type="submit"]:focus,
+#search-bar button:focus {
+  outline: 2px solid #0375b4;
+  outline-offset: 2px;
+  background: #013f6b;
+}
 
 .sidebar-categorias {
   margin: 0;
@@ -337,9 +379,13 @@ h5 {
   margin-bottom: 8px;
 }
 
+/* Acessibilidade: item de categoria com foco visível */
+.sidebar-categorias li:focus,
 .sidebar-categorias li:hover,
 .sidebar-categorias li.active {
   background: #025f9c;
+  outline: 2px solid #025f9c;
+  outline-offset: 2px;
 }
 
 #tags-container {
@@ -353,6 +399,16 @@ h5 {
   padding: 0.4rem 0.6rem;
   border-radius: 5px;
   font-size: 0.8rem;
+  color: #025f9c;
+  transition: background 0.2s, color 0.2s;
+}
+
+#tags-container a:focus,
+#tags-container a:hover {
+  background-color: #025f9c;
+  color: #fff;
+  outline: 2px solid #0375b4;
+  outline-offset: 2px;
 }
 
 /* Rodapé */
@@ -436,6 +492,13 @@ footer {
   font-size: 18px;
   border-radius: 4px;
   transition: background 0.3s;
+  /* Acessibilidade: foco visível */
+  outline: none;
+}
+
+.faq-question:focus {
+  background-color: #0375b4;
+  outline: 2px solid #0375b4;
 }
 
 .faq-question:hover {
@@ -489,6 +552,12 @@ footer {
   font-size: 18px;
   border-radius: 4px;
   transition: background 0.3s;
+  outline: none;
+}
+
+.hist:focus {
+  background-color: #0375b4;
+  outline: 2px solid #0375b4;
 }
 
 .hist:hover {
@@ -542,7 +611,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem; /* espaço entre os elementos */
+  gap: 1rem;
 }
 
 .modal-content ul {
@@ -567,7 +636,7 @@ footer {
   max-width: 500px;
 }
 
-
+/* Acessibilidade: botão fechar com foco */
 .modal .close {
   color: #aaa;
   position: absolute;
@@ -576,6 +645,13 @@ footer {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.modal .close:focus {
+  outline: 2px solid #025f9c;
+  color: #025f9c;
+  background: #e0e0e0;
 }
 
 .close-button {
@@ -587,6 +663,9 @@ footer {
   border-radius: 4px;
   cursor: pointer;
   margin-left: 400px;
+}
+.close-button:focus {
+  outline: 2px solid #025f9c;
 }
 
 .content.blurred {
@@ -615,7 +694,9 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
-
+.video-item img:focus {
+  outline: 2px solid #025f9c;
+}
 .video-item img:hover {
   transform: scale(1.02);
 }
@@ -625,9 +706,33 @@ footer {
   font-size: 0.95rem;
 }
 
+/* Adiciona skip link para acessibilidade */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 10000;
+  background: #025f9c;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 0 0 6px 6px;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  font-size: 1rem;
+  outline: 2px solid #fff;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
-  /* Navbar */
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -729,4 +834,3 @@ footer {
     padding: 1rem 0.5rem;
   }
 }
-
