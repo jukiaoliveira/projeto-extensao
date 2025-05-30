@@ -1,53 +1,65 @@
 @model List<Depoimento>
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8" />
+    <title>Depoimentos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="~/css/depoimentos.css" asp-append-version="true" />
     <!-- Font Awesome para o ícone da seta -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
-<header id="navbar">
-    <div id="navbar-inner">
-        <a asp-controller="Home" asp-action="Index" id="backToHome" title="Voltar">
-            <i class="fas fa-arrow-left"></i>
-        </a>
-
-        <h2 id="navbar-title">Depoimentos</h2>
-
-        <img src="~/img/logo.jfif" alt="Logo" id="logo" />
-    </div>
-</header>
-
-<section id="testimonials">
-
-    <div class="row">
-        <div class="col">
-            <h2>Deixe seu depoimento: </h2>
-            <p>Compartilhe suas experiências e ajude-nos a melhorar o tea</p>
-            <p class="text-md-justify">Seu depoimento é muito importante para nós! Ao compartilhar sua história, você
-                pode ajudar outras pessoas a entenderem melhor o TEA e a lidarem com os desafios que ele traz. Sua
-                experiência pode ser uma fonte de inspiração e apoio para aqueles que estão passando por situações
-                semelhantes.</p>
-            <a class="btn btn-primary btn-block mb-5" asp-controller="Home" asp-action="CreateDepoimento">Cadastrar
-                Depoimento</a>
+<body>
+    <a href="#testimonials" class="skip-link">Ir para o conteúdo principal</a>
+    <header id="navbar">
+        <div id="navbar-inner">
+            <a asp-controller="Home" asp-action="Index" id="backToHome" title="Voltar">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h2 id="navbar-title">Depoimentos</h2>
+            <img src="~/img/logo.jfif" alt="Logo" id="logo" />
         </div>
-    </div>
+    </header>
 
-
-    <div id="testimonials-display">
-        <h4>Depoimentos Recentes</h4>
-
-        @foreach (var depoimento in Model)
-        {
-            <div class="testimonial-card">
-                <h5>@depoimento.NomeAutor - @depoimento.IdadeAutor anos</h5>
-                <p>@depoimento.Texto</p>
+    <section id="testimonials">
+        <div class="row">
+            <div class="col">
+                <h2>Deixe seu depoimento: </h2>
+                <p>Compartilhe suas experiências e ajude-nos a melhorar o tea</p>
+                <p class="text-md-justify">Seu depoimento é muito importante para nós! Ao compartilhar sua história, você pode ajudar outras pessoas a entenderem melhor o TEA e a lidarem com os desafios que ele traz. Sua experiência pode ser uma fonte de inspiração e apoio para aqueles que estão passando por situações semelhantes.</p>
             </div>
-        }
+        </div>
 
-    </div>
-</section>
+        <div class="testimonial-form-wrapper">
+            <form class="testimonial-form" asp-action="CreateDepoimento" asp-controller="Home" method="post">
+                <h3>Deixe seu depoimento</h3>
+                <label for="NomeAutor">Nome</label>
+                <input type="text" id="NomeAutor" name="NomeAutor" required />
 
-<footer id="footer">
-    <p>&copy; 2025 © Projeto "Descobrimos o TEA na família. E agora?</p>
-</footer>
+                <label for="IdadeAutor">Idade</label>
+                <input type="number" id="IdadeAutor" name="IdadeAutor" min="1" max="120" required />
+
+                <label for="Texto">Depoimento</label>
+                <textarea id="Texto" name="Texto" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div id="testimonials-display">
+            <h4>Depoimentos Recentes</h4>
+            @foreach (var depoimento in Model)
+            {
+                <div class="testimonial-card">
+                    <h5>@depoimento.NomeAutor - @depoimento.IdadeAutor anos</h5>
+                    <p>@depoimento.Texto</p>
+                </div>
+            }
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2025 Projeto "Descobrimos o TEA na família. E agora?"</p>
+    </footer>
+</body>
+</html>

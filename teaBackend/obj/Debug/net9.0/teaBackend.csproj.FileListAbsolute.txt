@@ -467,8 +467,7 @@ c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\1q21abrg3
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\yws0ycwfd2-6ka3uvovhe.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\mrgiaghstz-bwb2blrv1r.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\vp24iaszpp-kh45b1v4aw.gz
-C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-un4vqva0xn.gz
-C:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-ahsm5byckz.gz
+<<<<<<< Updated upstream
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\bin\Debug\net9.0\appsettings.json
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\bin\Debug\net9.0\teaBackend.staticwebassets.runtime.json
@@ -708,3 +707,7 @@ C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debu
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\teaBackend.pdb
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\teaBackend.genruntimeconfig.cache
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\ref\teaBackend.dll
+=======
+>>>>>>> Stashed changes
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-a635hhsmrx.gz
+c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-ahsm5byckz.gz
