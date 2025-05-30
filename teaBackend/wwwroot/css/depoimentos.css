@@ -197,6 +197,19 @@ header#navbar {
   outline: 2px solid #fff;
 }
 
+/* Flex container para texto e imagem no card */
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.testimonial-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 /* Cartão de depoimento */
 .testimonial-card {
   background: linear-gradient(90deg, #f7fbff 60%, #e5f1fb 100%);
@@ -239,6 +252,15 @@ header#navbar {
 .testimonial-card .fas {
   color: #025f9c;
   margin-right: 4px;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin-left: 16px;
+  box-shadow: 0 2px 8px rgba(2, 95, 156, 0.10);
 }
 
 /* Rodapé */
@@ -300,12 +322,22 @@ a:focus, button:focus {
     padding: 12px 4px;
     gap: 8px;
   }
+  .testimonial-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
   .testimonial-card {
     padding: 18px 10px;
     font-size: 0.97rem;
   }
   .testimonial-form h3 {
     font-size: 1.1rem;
+  }
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
   }
   footer#footer {
     padding: 12px 6px;
@@ -341,12 +373,22 @@ a:focus, button:focus {
     padding: 8px 2px;
     gap: 6px;
   }
+  .testimonial-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
   .testimonial-card {
     padding: 12px 4px;
     font-size: 0.93rem;
   }
   .testimonial-form h3 {
     font-size: 0.98rem;
+  }
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
   }
   footer#footer {
     padding: 9px 3px;

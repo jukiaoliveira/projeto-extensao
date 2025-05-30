@@ -21,16 +21,19 @@
 
     <section id="testimonials">
         <div class="testimonial-form">
-
             <h3>Especialistas Recomendados</h3>
-
             @foreach (var medico in Model)
             {
                 <div class="testimonial-card">
-                    <p><strong>@medico.Nome</strong></p>
-                    <p>@medico.Especialidade</p>
-                    <p>📞 @medico.Telefone | ✉️ @medico.Email</p>
-                    <p><em>@medico.Clinica</em></p>
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p><strong>@medico.Nome</strong></p>
+                            <p>@medico.Especialidade</p>
+                            <p>📞 @medico.Telefone | ✉️ @medico.Email</p>
+                            <p><em>@medico.Clinica</em></p>
+                        </div>
+                        <img src="~/img/@medico.ImageFileName" alt="Foto de @medico.Nome" class="testimonial-img">
+                    </div>
                 </div>
             }
         </div>
