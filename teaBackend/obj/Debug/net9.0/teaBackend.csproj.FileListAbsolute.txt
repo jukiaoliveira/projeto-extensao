@@ -622,7 +622,6 @@ C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debu
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\scopedcss\bundle\teaBackend.styles.css
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\scopedcss\projectbundle\teaBackend.bundle.scp.css
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\1q21abrg32-dhrsqzw0pc.gz
-C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-un4vqva0xn.gz
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\yws0ycwfd2-6ka3uvovhe.gz
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\mrgiaghstz-bwb2blrv1r.gz
 C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\vp24iaszpp-kh45b1v4aw.gz
@@ -711,3 +710,4 @@ C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debu
 >>>>>>> Stashed changes
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-a635hhsmrx.gz
 c:\Users\User\Desktop\Extensão\teaBackend\obj\Debug\net9.0\compressed\v83rlfxc72-ahsm5byckz.gz
+C:\Users\thiag\Desktop\git\projeto-extensao\projeto-extensao\teaBackend\obj\Debug\net9.0\compressed\z361ss35ml-a635hhsmrx.gz
