@@ -28,6 +28,8 @@ O projeto tem como propósito oferecer um canal acessível para pais, familiares
 
 ## 📷 Demonstração
 
+<img src="~/img/videoTea.gif" width="700">
+
 ## 👥 Equipe
 
 **Giovana Reis, Julia Oliveira, Thiago Lima, Talita Munis, Adilson Junior, Ingrid Oliveira, Pablo Augusto, Maria Clara Simões**
