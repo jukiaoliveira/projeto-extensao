@@ -28,7 +28,7 @@ O projeto tem como propósito oferecer um canal acessível para pais, familiares
 
 ## 📷 Demonstração
 
-<img src="wwwroot/img/videoTea.gif" width=800px>
+<img src="teaBackend/wwwroot/img/videoTea.gif" width=800px>
 
 ## 👥 Equipe
 
